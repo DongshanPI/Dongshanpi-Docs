@@ -46,6 +46,7 @@ jobs:
         run: |
           pip install \
             mkdocs\
+            pymdown-extensions\
             mkdocs-minify-plugin>=0.3 \
             mkdocs-redirects>=1.0 \
             mkdocs-rss-plugin>=0.17
