@@ -92,8 +92,8 @@ jobs:
           cp -rfd site/* main/
           cd main
           ls
-          git config --local user.email "baiwenwang@100ask.com"
-          git config --local user.name "www.100ask.org"
+          git config --local user.email "team100ask@outlook.com"
+          git config --local user.name "100askTeam"
           git add .
           git commit -m "Update documentation" -a || true
           git push origin main
