@@ -89,7 +89,7 @@ jobs:
           mkdocs build
           ls site
           git clone https://${{secrets.CODING_USERNAME}}:${{secrets.CODING_PASSWD}}@github.com/100askTeam/Docs-DongshanPi.git  --branch main --single-branch main
-          cp site/* main/
+          cp -rfd site/* main/
           cd master
           ls
           git config --local user.email "baiwenwang@100ask.com"
