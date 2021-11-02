@@ -31,6 +31,7 @@ jobs:
   documentation:
     name: Build documentation
     runs-on: ubuntu-latest
+    concurrency: docs-build-and-deploy
     steps:
 
       - name: Checkout repository
@@ -45,23 +46,14 @@ jobs:
         run: |
           pip install .
           pip install \
+            mkdocs\
             mkdocs-minify-plugin>=0.3 \
             mkdocs-redirects>=1.0 \
             mkdocs-rss-plugin>=0.17
 
-      - name: Install Insiders build
-        if: github.event.repository.fork == false
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: mkdocs-materia
         run: |
-          git clone --depth 1 https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-          pip install -e mkdocs-material-insiders
-          cp mkdocs-material-insiders/mkdocs.yml mkdocs.yml
-          echo "THEME_DIR=mkdocs-material-insiders/material" >> $GITHUB_ENV
-
-      - name: Deploy documentation
-        env:
-          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-        run: |
-          mkdocs gh-deploy --force
-          mkdocs --version
+          ls
+          mkdocs build
+          ls
+          ls site
