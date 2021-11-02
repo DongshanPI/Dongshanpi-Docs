@@ -18,7 +18,7 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-name: documentation
+name: Build docs
 on:
   push:
     branches:
@@ -26,22 +26,41 @@ on:
 
 env:
   PYTHON_VERSION: 3.x
+  EM_VERSION: 2.0.4
+  EM_CACHE_FOLDER: 'emsdk-cache'
 
 jobs:
-  documentation:
-    name: Build documentation
+  build-and-deploy:
     runs-on: ubuntu-latest
+    name: Build documentation
     concurrency: docs-build-and-deploy
     steps:
 
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
-      - name: Set up Python runtime
+      - name: Setup Python
         uses: actions/setup-python@v1
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-
+          python-version: 3.7
+          #python-version: ${{ env.PYTHON_VERSION }}
+      - name: Cache Python packages
+        uses: actions/cache@v2
+        with:
+          # Cache the Python package environment, excluding pip and setuptools installed by setup-python
+          path: |
+            ~/.cache/pip
+            ${{ env.pythonLocation }}/bin/*
+            ${{ env.pythonLocation }}/include
+            ${{ env.pythonLocation }}/lib/python*/site-packages/*
+            !${{ env.pythonLocation }}/bin/pip*
+            !${{ env.pythonLocation }}/lib/python*/site-packages/pip*
+            !${{ env.pythonLocation }}/lib/python*/site-packages/setuptools*
+          key: ${{ env.pythonLocation }}-${{ hashFiles('docs/requirements.txt') }}
+      
       - name: Install Python dependencies
         run: |
           pip install \
@@ -51,6 +70,19 @@ jobs:
             mkdocs-redirects>=1.0 \
             mkdocs-rss-plugin>=0.17
 
+      - name: Setup Emscripten cache
+        id: cache-system-libraries
+        uses: actions/cache@v2
+        with:
+          path: ${{env.EM_CACHE_FOLDER}}
+          key: ${{env.EM_VERSION}}-${{ runner.os }}
+      - uses: mymindstorm/setup-emsdk@v9
+        with:
+          version: ${{env.EM_VERSION}}
+          actions-cache-folder: ${{env.EM_CACHE_FOLDER}}
+      - name: ccache
+        uses: hendrikmuhs/ccache-action@v1
+        
       - name: mkdocs-materia
         run: |
           ls
