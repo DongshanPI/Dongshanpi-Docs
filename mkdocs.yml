@@ -5,6 +5,11 @@ site_author: 100ask
 site_description: >-
   DongShan Pi board Start Page.
 
+repo_name: codebug8/mkdocs-dongshanpi
+repo_url: https://github.com/codebug8/mkdocs-dongshanpi
+edit_uri: ""
+
+
 # Configuration
 theme:
   name: null
