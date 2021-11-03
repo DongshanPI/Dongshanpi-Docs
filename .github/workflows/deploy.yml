@@ -14,7 +14,7 @@ jobs:
     - name: Build
       run: | 
         sudo apt-get install python3-setuptools
-        python3 -m pip install mkdocs mkdocs-material
+        python3 -m pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-redirects
         python3 -m mkdocs build
     # Deploy to the gh-branch using the GITHUB_TOKEN.
     - name: Deploy
