@@ -85,15 +85,15 @@ jobs:
         
       - name: mkdocs-materia
         run: |
+          git config --local user.email "team100ask@outlook.com"
+          git config --local user.name "100askTeam"
           ls
           mkdocs build
           ls site
-          git clone https://${{secrets.CODING_USERNAME}}:${{secrets.CODING_PASSWD}}@github.com/100askTeam/Docs-DongshanPi.git  --branch main --single-branch main
+          git clone https://${{secrets.CODING_TOKEN}}@github.com/100askTeam/Docs-DongshanPi.git  --branch main --single-branch main
           cp -rfd site/* main/
           cd main
           ls
-          git config --local user.email "team100ask@outlook.com"
-          git config --local user.name "100askTeam"
           git add .
           git commit -m "Update documentation" -a || true
           git push origin main
