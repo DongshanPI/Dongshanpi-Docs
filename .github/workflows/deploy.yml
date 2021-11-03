@@ -4,81 +4,23 @@ on:
     branches:
       - master
 
-env:
-  PYTHON_VERSION: 3.x
-  EM_VERSION: 2.0.4
-  EM_CACHE_FOLDER: 'emsdk-cache'
-
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    name: Build documentation
-    concurrency: docs-build-and-deploy
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
+    - uses: actions/checkout@v2
 
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-          fetch-depth: 0
-
-      - name: Setup Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.7
-          #python-version: ${{ env.PYTHON_VERSION }}
-      - name: Cache Python packages
-        uses: actions/cache@v2
-        with:
-          # Cache the Python package environment, excluding pip and setuptools installed by setup-python
-          path: |
-            ~/.cache/pip
-            ${{ env.pythonLocation }}/bin/*
-            ${{ env.pythonLocation }}/include
-            ${{ env.pythonLocation }}/lib/python*/site-packages/*
-            !${{ env.pythonLocation }}/bin/pip*
-            !${{ env.pythonLocation }}/lib/python*/site-packages/pip*
-            !${{ env.pythonLocation }}/lib/python*/site-packages/setuptools*
-          key: ${{ env.pythonLocation }}-${{ hashFiles('docs/requirements.txt') }}
-      
-      - name: Install Python dependencies
-        run: |
-          pip install \
-            mkdocs\
-            mkdocs-material\
-            mkdocs-minify-plugin>=0.3 \
-            mkdocs-redirects>=1.0 \
-            mkdocs-rss-plugin>=0.17
-
-      - name: Setup Emscripten cache
-        id: cache-system-libraries
-        uses: actions/cache@v2
-        with:
-          path: ${{env.EM_CACHE_FOLDER}}
-          key: ${{env.EM_VERSION}}-${{ runner.os }}
-      - uses: mymindstorm/setup-emsdk@v9
-        with:
-          version: ${{env.EM_VERSION}}
-          actions-cache-folder: ${{env.EM_CACHE_FOLDER}}
-      - name: ccache
-        uses: hendrikmuhs/ccache-action@v1
-
-    - name: Setup Secret Secure Shell
-      run: |
-        mkdir -p ~/.ssh/
-        echo "${{secrets.DEPLOY_KEY}}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-    - name: Prepare Git Initialization
-      run: |
-        git config --global user.name "100askTeam"
-        git config --global user.email "team100ask@outlook.com"        
-      - name: mkdocs-materia
-        run: |
-          mkdocs build
-          ls site
-          cd main &&  ls
-          git add .
-          git commit -m "Update documentation" -a || true
-          git push origin main
+    # Install mkdocs and build the page 
+    - name: Build
+      run: | 
+        sudo apt-get install python3-setuptools
+        python3 -m pip install mkdocs mkdocs-material
+        python3 -m mkdocs build
+    # Deploy to the gh-branch using the GITHUB_TOKEN.
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site
+        publish_branch: master  # deploying branch
           
