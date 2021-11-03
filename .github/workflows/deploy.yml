@@ -3,24 +3,14 @@ on:
   push:
     branches:
       - master
-
+      - main
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-
-    # Install mkdocs and build the page 
-    - name: Build
-      run: | 
-        sudo apt-get install python3-setuptools
-        python3 -m pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-redirects
-        python3 -m mkdocs build
-    # Deploy to the gh-branch using the GITHUB_TOKEN.
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{secrets.PERSONAL_TOKEN}}
-        publish_dir: ./site
-        publish_branch: master  # deploying branch
-          
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-redirects
+      - run: mkdocs gh-deploy --force
