@@ -5,10 +5,6 @@ site_author: 100ask
 site_description: >-
   DongShan Pi board Start Page.
 
-repo_name: codebug8/mkdocs-dongshanpi
-repo_url: https://github.com/codebug8/mkdocs-dongshanpi
-edit_uri: ""
-
 
 # Configuration
 theme:
@@ -131,7 +127,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: 'index.md'
-  - DongShanPi-One:
+  - 根页面: 'index.md'
+  - 東山Pi壹号:
     - QuickStart: 'DongshanPi-One/03.md'
     - LinuxTest: 'DongshanPi-One/04.md'
