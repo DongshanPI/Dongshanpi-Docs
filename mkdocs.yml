@@ -20,7 +20,7 @@ theme:
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
-  language: en
+  language: zh
   features:
     - content.code.annotate
     # - content.tabs.link
