@@ -95,6 +95,8 @@ markdown_extensions:
   - meta
   - md_in_html
   - toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify  
+  - toc:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
@@ -130,42 +132,19 @@ nav:
   - 根页面:
     - index.md
   - 東山Pi壹号:
-    - index.md
-    - 开发板简介: 'DongshanPi-One/01.md'
+    - 主板简介: 'DongshanPi-One/13.md'
+    - 配套资源: 'DongshanPi-One/01.md'
     - 快速上手:
-      - 连接开发板: 'DongshanPi-One/01.md'
-      - 体验开发板: 'DongshanPi-One/01.md'
-      - 更新系统: 'DongshanPi-One/01.md'
-      - 功能验证: 'DongshanPi-One/01.md'
-      - 配套模块:  'DongshanPi-One/01.md'
+      - 连接开发板: 'DongshanPi-One/02.md'
     - 开发入门:
-      - 源码下载: 'DongshanPi-One/01.md'
-      - 配置开发环境: 'DongshanPi-One/01.md'
-      - uboot编译&烧写: 'DongshanPi-One/01.md'
-      - kernel编译&烧写: 'DongshanPi-One/01.md'
-      - rootfs编译&烧写: 'DongshanPi-One/01.md'
-      - 应用测试:  'DongshanPi-One/01.md'
+      - 源码下载: 'DongshanPi-One/03.md'
+      - 配置开发环境: 'DongshanPi-One/04.md'
     - 系统加强包:
-      - 自动化构建系统: 'DongshanPi-One/01.md'
-      - Lvgl界面开发: 'DongshanPi-One/01.md'
-      - 驱动模块开发: 'DongshanPi-One/01.md'
-  - 東山Pi2号:
-    - index.md
-    - 开发板简介: 'DongshanPi-One/01.md'
+      - 自动化构建系统: 'DongshanPi-One/05.md'
+  - 東山Pi贰号:
+    - 开发板简介: 'DongshanPi-One/07.md'
     - 快速上手:
-      - 连接开发板: 'DongshanPi-One/01.md'
-      - 体验开发板: 'DongshanPi-One/01.md'
-      - 更新系统: 'DongshanPi-One/01.md'
-      - 功能验证: 'DongshanPi-One/01.md'
-      - 配套模块:  'DongshanPi-One/01.md'
-    - 开发入门:
-      - 源码下载: 'DongshanPi-One/01.md'
-      - 配置开发环境: 'DongshanPi-One/01.md'
-      - uboot编译&烧写: 'DongshanPi-One/01.md'
-      - kernel编译&烧写: 'DongshanPi-One/01.md'
-      - rootfs编译&烧写: 'DongshanPi-One/01.md'
-      - 应用测试:  'DongshanPi-One/01.md'
-    - 系统加强包:
-      - 自动化构建系统: 'DongshanPi-One/01.md'
-      - Lvgl界面开发: 'DongshanPi-One/01.md'
-      - 驱动模块开发: 'DongshanPi-One/01.md'      
+      - 'DongshanPi-One/09.md'
+      - 连接开发板: 'DongshanPi-One/08.md'
+  - 关于我们:
+     - 简介: 'DongshanPi-One/11.md'
