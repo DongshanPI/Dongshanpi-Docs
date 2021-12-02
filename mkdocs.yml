@@ -10,7 +10,7 @@ copyright: Copyright &copy; 2008 - 2021 100ask Team
 theme:
   name: null
   custom_dir: !ENV [THEME_DIR, "material"]
-
+  language: custom
   # Static files
   static_templates:
     - 404.html
@@ -67,15 +67,6 @@ extra:
   analytics:
     provider: google
     property: G-LZX4K52CZ1
-  social:
-  alternate:
-    - name: English
-      link: /en/ 
-      lang: en
-    - name: 中文
-      link: /zh/
-      lang: zh
-  analytics: # 
     feedback:
       title: Was this page helpful?
       ratings:
@@ -89,7 +80,16 @@ extra:
           data: 0
           note: >- # 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target=_blank>feedback form</a>.
+            using our <a href="..." target=_blank>feedback form</a>.    
+  alternate:
+    - name: English
+      link: /en
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
+  disqus: dongshanpi-com
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -131,6 +131,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  
 
 # Page tree
 nav:
