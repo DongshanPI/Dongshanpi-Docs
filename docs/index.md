@@ -1,4 +1,4 @@
-# 东山Pi简述(Introduction DongShanPi Boards)
+# 东山Pi简述(Introduction)
 
 ## 什么是东山Pi系列开发板？
   东山Pi系列开发是深圳百问网公司为想学习嵌入式Linux开发同学专门设计定做的低价超高性价比开发板。

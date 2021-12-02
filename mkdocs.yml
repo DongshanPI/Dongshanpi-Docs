@@ -141,16 +141,16 @@ nav:
     - 配套资源: 'DongshanPi-One/02-SupportingResources.md'
     - 快速上手:
       - 连接开发板: 'DongshanPi-One/03-QuickStart.md'
-    - 开发入门:
-      - 获取源码: 'DongshanPi-One/06-BuildFlashBoot.md'
+    - 原厂SDK开发入门:
+      - 获取源码: 'DongshanPi-One/05-GetSourceCode.md'
       - 编译烧写Boot: 'DongshanPi-One/06-BuildFlashBoot.md'
-      - 编译烧写Kernel: 'DongshanPi-One/06-BuildFlashBoot.md'
-      - 编译烧写Rootfs: 'DongshanPi-One/06-BuildFlashBoot.md'
-      - 编译烧写APP: 'DongshanPi-One/06-BuildFlashBoot.md'
-    - 系统加强包:
-      - 社区版本开发: 'DongshanPi-One/06-BuildFlashBoot.md'
-      - 支持的模块: 'DongshanPi-One/09-SupportModules.md'
+      - 编译烧写Kernel: 'DongshanPi-One/07-BuildFlashKernel.md'
+      - 编译烧写Rootfs: 'DongshanPi-One/08-BuildFlashRootfs.md'
+      - 编译烧写APP: 'DongshanPi-One/12-BuildFlashApp.md'
+    - 系统加强:
+      - 社区版本开发: 'DongshanPi-One/15-SupportLinuxCommunity.md'
+      - 支持的模块: 'DongshanPi-One/09-SupportHardware.md'
       - 支持的工具: 'DongshanPi-One/10-SupportTools.md'
-      - 支持的系统: 'DongshanPi-One/11-SupportSystem.md'
+      - 支持的其它系统: 'DongshanPi-One/11-SupportOtherSystem.md'
   - 关于我们:
      - 简介: 'About.md'
