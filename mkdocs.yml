@@ -3,8 +3,8 @@ site_name: Dongshan Pi
 site_url: https://github.com/100askTeam/Docs-DongshanPi.git
 site_author: 100ask
 site_description: >-
-  DongShan Pi board Start Page.
-
+  DongShan Pi boards Start Page.
+copyright: Copyright &copy; 2008 - 2021 100ask Team
 
 # Configuration
 theme:
@@ -16,7 +16,7 @@ theme:
     - 404.html
 
   # Don't include MkDocs' JavaScript
-  include_search_page: false
+  include_search_page: true
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
@@ -24,7 +24,7 @@ theme:
   features:
     - content.code.annotate
     # - content.tabs.link
-    # - header.autohide
+    - header.autohide
     # - navigation.expand
     - navigation.indexes
     # - navigation.instant
@@ -53,9 +53,9 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: favicon.png
   icon:
-    logo: logo
+    logo: dsp-logo
 
 # Plugins
 plugins:
@@ -63,19 +63,11 @@ plugins:
   - minify:
       minify_html: true
 
-# Customization
 extra:
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-LZX4K52CZ1
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/twitter
   alternate:
     - name: English
       link: /en/ 
@@ -84,7 +76,21 @@ extra:
     - name: 中文
       link: /zh/
       lang: zh
-
+  analytics: # 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- # 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target=_blank>feedback form</a>.
 # Extensions
 markdown_extensions:
   - admonition
@@ -132,19 +138,20 @@ nav:
   - 根页面:
     - index.md
   - 東山Pi壹号:
-    - 主板简介: 'DongshanPi-One/13.md'
-    - 配套资源: 'DongshanPi-One/01.md'
+    - 主板简介: 'DongshanPi-One/01-BoardIntroduction.md'
+    - 配套资源: 'DongshanPi-One/02-SupportingResources.md'
     - 快速上手:
-      - 连接开发板: 'DongshanPi-One/02.md'
+      - 连接开发板: 'DongshanPi-One/03-QuickStart.md'
     - 开发入门:
-      - 源码下载: 'DongshanPi-One/03.md'
-      - 配置开发环境: 'DongshanPi-One/04.md'
+      - 获取源码: 'DongshanPi-One/06-BuildFlashBoot.md'
+      - 编译烧写Boot: 'DongshanPi-One/06-BuildFlashBoot.md'
+      - 编译烧写Kernel: 'DongshanPi-One/06-BuildFlashBoot.md'
+      - 编译烧写Rootfs: 'DongshanPi-One/06-BuildFlashBoot.md'
+      - 编译烧写APP: 'DongshanPi-One/06-BuildFlashBoot.md'
     - 系统加强包:
-      - 自动化构建系统: 'DongshanPi-One/05.md'
-  - 東山Pi贰号:
-    - 开发板简介: 'DongshanPi-One/07.md'
-    - 快速上手:
-      - 'DongshanPi-One/09.md'
-      - 连接开发板: 'DongshanPi-One/08.md'
+      - 社区版本开发: 'DongshanPi-One/06-BuildFlashBoot.md'
+      - 支持的模块: 'DongshanPi-One/09-SupportModules.md'
+      - 支持的工具: 'DongshanPi-One/10-SupportTools.md'
+      - 支持的系统: 'DongshanPi-One/11-SupportSystem.md'
   - 关于我们:
-     - 简介: 'DongshanPi-One/11.md'
+     - 简介: 'About.md'
