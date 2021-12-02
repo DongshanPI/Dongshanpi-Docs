@@ -1,5 +1,5 @@
 # Project information
-site_name: Dongshan Pi
+site_name: 東山Pi
 site_url: https://github.com/100askTeam/Docs-DongshanPi.git
 site_author: 100ask
 site_description: >-
@@ -71,7 +71,6 @@ extra:
   alternate:
     - name: English
       link: /en/ 
-
       lang: en
     - name: 中文
       link: /zh/
