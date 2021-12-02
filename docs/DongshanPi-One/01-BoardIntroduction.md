@@ -25,14 +25,15 @@
 ## 软件资源描述
 
 ### 芯片原厂配套SDK
+> 系统版本介绍,目前整套SDK基于星辰科技芯片原厂释放出来的 TAKOYAKI_DLC00V030 版本进行。
 
-* 系统版本
-  * bootloader uboot 2015 
-  * kernel 4.9
-  * busybox 1.24
-  * toolchain gcc 8.2
+ * bootloader版本: 深度定制化uboot
+ * kernel版本: 深度定制化的 LinuxKernel 4.9
+ * busybox 1.24
+ * C库：提供了musl glibc库支持
+ * toolchain版本： arm-linux-gnueabihf- 8.2
 
-详细的获取使用方式 请参考后续 开发入门章节内
+详细的获取及开发方式请参考后续 **原厂SDK开发入门** 章节。
 
 ### Linux社区版本SDK
 
