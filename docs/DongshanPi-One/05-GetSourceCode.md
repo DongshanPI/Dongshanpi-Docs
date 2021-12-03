@@ -19,6 +19,13 @@ book@100ask:~$ sudo apt-get install pkg-config
 book@100ask:~$ sudo apt-get install openssh-server
 book@100ask:~$ sudo apt-get install repo
 ```
+
+或者使用下面这条命令一次全部下载上面的tools：
+
+```shell
+sudo apt-get install libc6-dev-i386 lib32z1 lib32ncurses5 libuuid1:i386 cmake libncurses5-dev libncursesw5-dev bc xz-utils automake libtool libevdev-dev pkg-config openssh-server repo
+```
+
 安装完了即可使用,如上这些需要安装的tool && lib是必须的，因为编译过程中会用到相关内容。这边就不一一说明是哪个错误，可以尝试先不安装编译来查看相关错误，为了方便，在编译之前一次性安装即可。
 如果默认sh不是bash，需要将sh改成bash：
 ``` shell
