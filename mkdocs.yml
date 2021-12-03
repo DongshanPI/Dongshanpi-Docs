@@ -147,8 +147,8 @@ nav:
       - 获取源码: 'DongshanPi-One/05-GetSourceCode.md'
       - 编译烧写Boot: 'DongshanPi-One/06-BuildFlashBoot.md'
       - 编译烧写Kernel: 'DongshanPi-One/07-BuildFlashKernel.md'
-      - 编译烧写Rootfs: 'DongshanPi-One/08-BuildFlashRootfs.md'
-      - 编译烧写APP: 'DongshanPi-One/12-BuildFlashApp.md'
+      - 编译烧写系统: 'DongshanPi-One/08-BuildFlashSystem.md'
+      - 开发APP: 'DongshanPi-One/12-BuildFlashApp.md'
     - 系统加强:
       - 社区版本开发: 'DongshanPi-One/15-SupportLinuxCommunity.md'
       - 支持的模块: 'DongshanPi-One/09-SupportHardware.md'

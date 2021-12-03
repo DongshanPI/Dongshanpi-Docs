@@ -33,6 +33,18 @@ book@100ask:~$ mkdir DongshanPiOne-TAKOYAKI  && cd  DongshanPiOne-TAKOYAKI
 book@100ask:~/DongshanPiOne-TAKOYAKI$ repo init -u  https://gitee.com/weidongshan/manifests.git -b linux-sdk -m  SSD202D/dongshanpi-one_takoyaki_dlc00v030.xml
 book@100ask:~/DongshanPiOne-TAKOYAKI$ repo sync -j4
 ```
+获取成功后的源码目录结构如下
+```shell
+book@virtual-machine:~/DongshanPiOne-TAKOYAKI$ tree -L 1
+.
+├── boot   //使用的是uboot-2015  主要用于烧写引导kernel启动。
+├── DevelopmentEnvConf  //自动配置开发环境的一些脚本文件
+├── gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf   //交叉编译工具链。
+├── kernel  //使用4.9.88版本的内核
+├── project  //根文件系统和应用相关源码,主要包含了 编译构建根文件系统 APP 并自动打包生成合适的格式用来烧写。
+└── sdk  //
+```
+
 
 ### 配置编译环境
 
