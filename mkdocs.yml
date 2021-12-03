@@ -83,7 +83,7 @@ extra:
             using our <a href="..." target=_blank>feedback form</a>.    
   alternate:
     - name: English
-      link: /en
+      link: /en/
       lang: en
     - name: 中文
       link: /zh/
