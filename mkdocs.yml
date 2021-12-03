@@ -1,11 +1,11 @@
 # Project information
 site_name: 東山Pi
-site_url: https://github.com/100askTeam/Docs-DongshanPi.git
+site_url: https://github.com/100askTeam/Dongshanpi-Docs.git
 site_author: 100ask
 site_description: >-
   DongShan Pi boards Start Page.
 copyright: Copyright &copy; 2008 - 2021 100ask Team
-edit_uri: edit/master/docs/
+edit_uri: https://github.com/100askTeam/Dongshanpi-Docs/tree/master/docs
 
 # Configuration
 theme:
