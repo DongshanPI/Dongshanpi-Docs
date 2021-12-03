@@ -5,6 +5,7 @@ site_author: 100ask
 site_description: >-
   DongShan Pi boards Start Page.
 copyright: Copyright &copy; 2008 - 2021 100ask Team
+edit_uri: edit/master/docs/
 
 # Configuration
 theme:

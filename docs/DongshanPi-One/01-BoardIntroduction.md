@@ -22,22 +22,35 @@
   * usbHost:  TypeC接口的USB HOST 支持连接支持USB协议的设备。
   * 扩展接口： 使用MINI-PCI-E接口 用于连接底板。
 
-## 软件资源描述
+## 开发资源描述
 
 ### 芯片原厂配套SDK
-> 系统版本介绍,目前整套SDK基于星辰科技芯片原厂释放出来的 TAKOYAKI_DLC00V030 版本进行。
+> 系统版本介绍,目前整套SDK基于星辰科技芯片原厂释放出来的 TAKOYAKI_DLC00V030 版本进行适配讲解。
 
- * bootloader版本: 深度定制化uboot
- * kernel版本: 深度定制化的 LinuxKernel 4.9
- * busybox 1.24
- * C库：提供了musl glibc库支持
- * toolchain版本： arm-linux-gnueabihf- 8.2
+| 名称        | 版本     |
+| :----------- | :------- |
+|  bootloader版本: | 深度定制化uboot |
+| kernel版本: | 深度定制化的 LinuxKernel 4.9|
+ busybox  | 1.24 |
+ C库：| 提供了musl glibc库支持|
+ toolchain版本：| arm-linux-gnueabihf- 8.2 |
 
-详细的获取及开发方式请参考后续 **原厂SDK开发入门** 章节。
+* 芯片原厂SDK的优势: 
+
+    这套框架是星辰科技针对于产品方案 项目方案等专门进行调整过的sdk 里面包含了许多实际产品中的demo示例，如果我们想快速落地产品 可以使用此套sdk。
+
+* 芯片原厂SDK的劣势
+
+    由于这套SDK是为了做产品，所以在此基础上做了很多框架性的改动，和我们常见的Linux开发有一定的区别，需要配合着原厂的文档才可以使用。
+
+* 详细的获取及开发方式请参考后续 **原厂SDK开发入门** 章节。
 
 ### Linux社区版本SDK
+> 社区版本使用的是基于 主线LinuxKernel Uboot 以及Buildroot进行开发。
 
-* Linux主线版本
+* 详细的获取及开发方式请参考 **社区版本开发** 章节。
+
+  
 
 
 
