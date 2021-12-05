@@ -89,7 +89,8 @@ extra:
     - name: 中文
       link: /zh/
       lang: zh
-  disqus: dongshanpi-com
+      
+#  disqus: dongshanpi-com
 
 # Extensions
 markdown_extensions:
