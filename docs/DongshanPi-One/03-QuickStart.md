@@ -23,8 +23,10 @@
 ### 2. 打开串口控制台
 #### 获取串口工具
 使用Putty或者MobaXterm等串口工具来开发板设备。
-其中putty工具可以访问页面  https://www.chiark.greenend.org.uk/~sgtatham/putty/  来获取。
-MobaXterm可以通过访问页面 https://mobaxterm.mobatek.net/ 获取 (推荐使用)。
+
+* 其中putty工具可以访问页面  https://www.chiark.greenend.org.uk/~sgtatham/putty/  来获取。
+* MobaXterm可以通过访问页面 https://mobaxterm.mobatek.net/ 获取 (推荐使用)。
+
 
 #### 使用putty登录串口
 登录截图
@@ -40,14 +42,17 @@ MobaXterm可以通过访问页面 https://mobaxterm.mobatek.net/ 获取 (推荐�
 ### 连接模块
 
 #### 连接7寸屏模块
-* 视频教程
- 
+* 连接视频教程
+<iframe src="//player.bilibili.com/player.html?aid=293906511&bvid=BV18F411a7jM&cid=434612050&page=1"scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">  </iframe> 
+
 * 模块介绍 
+
 
 ### 连接底板
 #### 直播课配套底板
-* 视频教程
-  
+* 连接视频教程
+<iframe src="//player.bilibili.com/player.html?aid=293906511&bvid=BV18F411a7jM&cid=434612050&page=1"scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">  </iframe>   
+
 * 底板介绍
 
 
