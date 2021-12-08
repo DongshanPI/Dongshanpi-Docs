@@ -29,9 +29,9 @@
 
 | 名称        | 版本     |
 | :----------- | :------- |
-|  bootloader版本: | 深度定制化uboot |
-| kernel版本: | 深度定制化的 LinuxKernel 4.9|
- toolchain版本：| arm-linux-gnueabihf- 8.2 |
+|bootloader版本: | 深度定制化uboot |
+|kernel版本: | 深度定制化的 LinuxKernel 4.9|
+|toolchain版本：| arm-linux-gnueabihf- 8.2 |
 
 * 芯片原厂SDK的优势: 
 
