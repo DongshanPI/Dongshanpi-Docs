@@ -1,5 +1,7 @@
 # 获取配套sdk源码
-> 源码介绍
+如果您感觉跟着文档不知道怎么操作，可以直接查看我们提前录制好的手把手教学视频。
+<iframe src="//player.bilibili.com/player.html?aid=293906511&bvid=BV18F411a7jM&cid=434612050&page=1"scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">  </iframe>
+
 ## 配置开发环境
 > 我们的开发环境基于ubuntu-18.04系统 为了避免爬坑浪费您的时间 请尽量和我们保持一致。
 ### 安装编译需要的lib & tool
@@ -49,9 +51,8 @@ book@virtual-machine:~/DongshanPiOne-TAKOYAKI$ tree -L 1
 ├── gcc-arm-8.2-2018.08-x86_64-arm-linux-gnueabihf   //交叉编译工具链。
 ├── kernel  //使用4.9.88版本的内核
 ├── project  //根文件系统和应用相关源码,主要包含了 编译构建根文件系统 APP 并自动打包生成合适的格式用来烧写。
-└── sdk  //
+└── sdk  
 ```
-
 
 ### 配置编译环境
 
@@ -99,9 +100,3 @@ book@100ask:~$
 设置完成交叉编译工具链 接下来就可以开始编译烧写了。
 
 
-## 简述开发流程
-### 调试环境概述
-> 通常我们会以交叉编译的方式进行开发和调试，即“宿主机+目标机”的形式。而宿主机和目标机的连接我们一般采用串口连接或网络连接，如下图所示：
-
-串口Debug调试仅用于抓log，直接使用串口设备正确对接uart0的RX/TX即可(Cosole默认波特率是115200)
-如需针对使用SSD平台的工具配合调试/烧录/读写寄存器操作（如：Flash_Tool）,则需购买专用的Debug Tool

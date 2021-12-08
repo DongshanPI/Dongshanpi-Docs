@@ -1,8 +1,8 @@
 # 编译烧写Kernel
+简述：东山Pi壹号开发板使用的内核是基于LinuxKernel主线4.9版本进行适配支持，里面做了很多的改动，更多是支持了一些自家的控制器等专有的处理单元。
 
 ## 编译Kernel
-进入kernel根目录
-选择config Nand Flash
+首先进入kernel根目录，在编译之前还是需要确认清楚交叉编译工具链等环境是否配置成功，如果不确定 可以参考 [配置交叉编译工具链](DongshanPi-One/05-GetSourceCode/#_4) 章节。
 
 > make infinity2m_spinand_ssc011a_s01a_minigui_defconfig;
 
@@ -11,9 +11,9 @@
 Nand Flash	 
 > arch/arm/boot/uImage.xz	
 
-需要release到project目录：
+如果需要将编译出来的镜像最终打包放到一个完整的镜像内需要拷贝到project目录：
+> project\release\nvr\i2m\011A\glibc\8.2.1\bin\kernel\spinand	 
 
-project\release\nvr\i2m\011A\glibc\8.2.1\bin\kernel\spinand	
 
 ### 检查编译环境
 
