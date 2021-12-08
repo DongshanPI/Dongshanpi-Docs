@@ -22,6 +22,8 @@
   * usbHost:  TypeC接口的USB HOST 支持连接支持USB协议的设备。
   * 扩展接口： 使用MINI-PCI-E接口 用于连接底板。
 
+* 东山Pi壹号 开发板原理图文件：https://cowtransfer.com/s/6eb31c8d136949
+
 ## 开发资源描述
 
 ### 芯片原厂配套SDK

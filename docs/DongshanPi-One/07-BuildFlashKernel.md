@@ -22,7 +22,14 @@ Nand Flash
 ### 编译系统
 
 ## 烧写Kernel
+
 ### uboot内烧写
+``` shell
 
+fatload  mmc 0:1  0x21000000 uImage.xz
+nand erase.part KERNEL
+nand write.e 0x21000000 KERNEL ${filesize}
+nand erase.part RECOVERY
+nand write.e 0x21000000 RECOVERY ${filesize}
 
-### 文件系统内烧写
+```

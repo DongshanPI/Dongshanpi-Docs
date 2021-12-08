@@ -144,6 +144,7 @@ nav:
     - 配套资源: 'DongshanPi-One/02-SupportingResources.md'
     - 快速上手:
       - 连接开发板: 'DongshanPi-One/03-QuickStart.md'
+      - 常见问题: 'DongshanPi-One/03-SomeQustion.md'
     - 原厂SDK开发入门:
       - 获取源码: 'DongshanPi-One/05-GetSourceCode.md'
       - 编译烧写Boot: 'DongshanPi-One/06-BuildFlashBoot.md'
