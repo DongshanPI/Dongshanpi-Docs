@@ -10,7 +10,7 @@
 
 * 最小开发板器件布局
 
-![image-20211202174358899](http://photos.100ask.net/dongshanpi/one/BoardIntroduction-01.png)
+![image-20211202174358899](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/BoardIntroduction-01.23mck7imbajk.png)
 
 * 最小开发板规格参数
   * 主控芯片： 星辰科技 SSD202D 内置128MB DDR 支持H264/H265解码 支持MJPG编码。
