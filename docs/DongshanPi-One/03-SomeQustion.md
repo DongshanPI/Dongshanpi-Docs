@@ -15,15 +15,35 @@
 ### 烧写更新
 * 下载默认系统镜像
  * 点击下载 https://cowtransfer.com/s/49ce045534dc46
-
+下载后会得到一个名为 `image.zip` 的压缩包，需要先用压缩工具进行解压缩，解压缩后的文件列表如下。
+``` shell
+appconfigs.ubifs
+auto_update.txt
+auto_update_bin.txt
+boot/
+cis.bin
+customer.ubifs
+ipl_cust_s.bin
+ipl_s.bin
+kernel
+logo
+miservice.ubifs
+rootfs.ubifs
+scripts/
+scripts_bin/
+uboot_s.bin
+```
 
 * 拷贝到tf卡内
-  
+首先将已经准备好的分区格式为FAT32的TF卡连接至电脑，将上述解压出来的文件 全部拷贝至tf卡内。
+拷贝完成后,即可从电脑弹出tf卡，将卡插入 东山Pi开发板的 tf卡卡座内，完全按压进去。
+
 * 进入uboot命令行执行烧写命令
-  
+  此时确保开发板已经可以通过串口工具进行交互，按下复位键，紧接着在有启动信息打印时一直长按键盘 `enter` 回车键三秒左右松开，即可进入uboot命令行界面内。
+  进入uboot命令行以后 可以直接输入 `dstar` 命令，就会自动进行更新，等待更新 结束 自动重启系统即可。
+![SomeQustion-01](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/SomeQustion-01.png)  
 
-
-
+更新系统完整的log 输出，仅限参考：  
 
 ## 其它常见问题
 
