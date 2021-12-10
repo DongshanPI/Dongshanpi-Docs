@@ -1,20 +1,18 @@
 # 快速开始使用
 如果您感觉跟着文档不知道怎么操作，可以直接查看我们提前录制好的手把手教学视频。
-
-<iframe src="//player.bilibili.com/player.html?aid=293906511&bvid=BV18F411a7jM&cid=434612050&page=1"scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">  </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=807146816&bvid=BV1W34y1X7gJ&cid=457686134&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ## 上电启动系统
 ### 1. 连接串口线
 将配套的TypeC线一段连接至开发板的串口/供电接口，另一端连接至电脑USB接口，连接成功后板载的红色电源灯会亮起。
 默认情况下系统会自动安装串口设备驱动，如果没有自动安装，可以使用驱动精灵来自动安装。
 
-
-
 * 对于Windows系统
 此时Windows设备管理器 在 端口(COM和LPT) 处会多出一个串口设备，一般是以 `USB-Enhanced-SERIAL CH9102`开头，您需要留意一下后面的具体COM编号，用于后续连接使用。
 
 ![](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/QuickStart-01.png)
 如上图，COM号是96，我们接下来连接所使用的串口号就是96。
+
 
 * 对于Linux系统
 可以查看是否多出一个/dev/tty<> 设备,一般情况设备节点为 /dev/ttyACM0  。
