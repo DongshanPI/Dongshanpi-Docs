@@ -1,16 +1,28 @@
 # 所有配套资源
-## 原厂SDK开发配套的资源
+## 原厂配套开发资源
+### 星辰科技开发者在线
 
-#### 原厂SDK开发手册
-* 原厂SDK开发手册：　此页面内左侧　**原厂SDK开发入门**　章节。
-* 更加深入的详细版本：https://wx.comake.online/doc/syg27dk2rkls-SSD20X/
+#### Cmake在线
+* Cmake在线:  https://comake.online/
 
-## 配套的视频
-* 原厂SDK入门手把手操作视频：
- 
+#### 产品中心
+* 产品中心: https://comake.online/index.php?p=products_list&lanmu=2
+
+#### 资料下载
+
+* 资料下载: https://comake.online/index.php?p=down_list&lanmu=4&c_id=6&id=7
+
+#### 技术论坛
+* 技术论坛: https://dev.comake.online/forum.php
+
+#### SDK开发教程
+* SDK开发教程: https://comake.online/index.php?p=doc
+
+#### 交流社区
+* 交流社区: https://we.comake.online/
+
 ## 配套的扩展硬件
 
 ### 专门底板
 
 ### 专门模块
-
