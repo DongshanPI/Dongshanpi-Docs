@@ -134,7 +134,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   
-
 # Page tree
 nav:
   - 根页面:
@@ -150,11 +149,12 @@ nav:
       - 编译烧写Boot: 'DongshanPi-One/06-BuildFlashBoot.md'
       - 编译烧写Kernel: 'DongshanPi-One/07-BuildFlashKernel.md'
       - 编译烧写系统: 'DongshanPi-One/08-BuildFlashSystem.md'
-      - 开发APP: 'DongshanPi-One/12-BuildFlashApp.md'
-    - 系统加强:
-      - 社区版本开发: 'DongshanPi-One/15-SupportLinuxCommunity.md'
+      - 应用Demo示例: 'DongshanPi-One/16-RunDempApp.md'
+    - 系统加强:      
       - 支持的模块: 'DongshanPi-One/09-SupportHardware.md'
       - 支持的工具: 'DongshanPi-One/10-SupportTools.md'
       - 支持的其它系统: 'DongshanPi-One/11-SupportOtherSystem.md'
+    - Linux社区版本:
+      - 社区版本开发: 'DongshanPi-One/15-SupportLinuxCommunity.md'
   - 关于我们:
      - 简介: 'About.md'
