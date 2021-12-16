@@ -1,6 +1,8 @@
 # 快速开始使用
 如果您感觉跟着文档不知道怎么操作，可以直接查看我们提前录制好的手把手教学视频。
-<iframe src="//player.bilibili.com/player.html?aid=807146816&bvid=BV1W34y1X7gJ&cid=457686134&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe width="800" height="600"
+  src="//player.bilibili.com/player.html?aid=807146816&bvid=BV1W34y1X7gJ&cid=457686134&page=1">
+</iframe>
 
 ## 上电启动系统
 ### 1. 连接串口线
