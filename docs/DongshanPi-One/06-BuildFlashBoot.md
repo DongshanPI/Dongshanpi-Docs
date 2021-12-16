@@ -4,7 +4,9 @@
 > 烧录工具受芯片市场供货影响，价格非常高，所以我们不建议大家操作这部分。
 
 如果您发现您跟着此文档操作出现问题，可以直接查看我们提前录制好的手把手教学视频。
-<iframe src="//player.bilibili.com/player.html?aid=293906511&bvid=BV18F411a7jM&cid=434612050&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe width="800" height="600"
+  src="//player.bilibili.com/player.html?aid=807146816&bvid=BV1W34y1X7gJ&cid=457686134&page=1">
+</iframe>
 
 ## 编译bootloader
 

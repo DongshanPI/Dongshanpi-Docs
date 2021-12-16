@@ -1,6 +1,8 @@
 # 获取配套sdk源码
 如果您感觉跟着文档不知道怎么操作，可以直接查看我们提前录制好的手把手教学视频。
-<iframe src="//player.bilibili.com/player.html?aid=293906511&bvid=BV18F411a7jM&cid=434612050&page=1"scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">  </iframe>
+<iframe width="800" height="600"
+  src="//player.bilibili.com/player.html?aid=807146816&bvid=BV1W34y1X7gJ&cid=457686134&page=1">
+</iframe>
 
 ## 配置开发环境
 > 我们的开发环境基于ubuntu-18.04系统 为了避免爬坑浪费您的时间 请尽量和我们保持一致。
