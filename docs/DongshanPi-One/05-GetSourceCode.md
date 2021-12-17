@@ -27,22 +27,22 @@ book@100ask:~$ sudo apt-get install repo
 或者使用下面这条命令一次全部下载上面的tools：
 
 ```shell
-sudo apt-get install libc6-dev-i386 lib32z1 lib32ncurses5 libuuid1:i386 cmake libncurses5-dev libncursesw5-dev bc xz-utils automake libtool libevdev-dev pkg-config openssh-server repo
+sudo apt-get install -y libc6-dev-i386 lib32z1 lib32ncurses5 libuuid1:i386 cmake libncurses5-dev libncursesw5-dev bc xz-utils automake libtool libevdev-dev pkg-config openssh-server repo
 ```
 
 安装完了即可使用,如上这些需要安装的tool && lib是必须的，因为编译过程中会用到相关内容。这边就不一一说明是哪个错误，可以尝试先不安装编译来查看相关错误，为了方便，在编译之前一次性安装即可。
 如果默认sh不是bash，需要将sh改成bash：
 ``` shell
 book@100ask:~$  sudo rm /bin/sh
-book@100ask:~$  sudo ln –s /bin/bash /bin/sh
+book@100ask:~$  sudo ln -s /bin/bash /bin/sh
 ```
 ## 获取源码
-   源码我们使用repo工具来统一管理多个git仓库，方便一键获取和更新，在获取源码之前您需要线确定是否有安装repo工具，如果没有则需要执行 ` sudo apt install repo `命令进行安装。
-安装后可以在家目录下执行 如下命令进行源码获取，等待获取完成即可。
+   源码我们使用repo工具来统一管理多个git仓库，方便一键获取和更新，之后使用如下命令进行源码获取，等待获取完成即可
 ``` shell
+book@100ask:~$ git clone https://e.coding.net/codebug8/repo.git
 book@100ask:~$ mkdir DongshanPiOne-TAKOYAKI  && cd  DongshanPiOne-TAKOYAKI
-book@100ask:~/DongshanPiOne-TAKOYAKI$ repo init -u  https://gitee.com/weidongshan/manifests.git -b linux-sdk -m  SSD202D/dongshanpi-one_takoyaki_dlc00v030.xml
-book@100ask:~/DongshanPiOne-TAKOYAKI$ repo sync -j4
+book@100ask:~/DongshanPiOne-TAKOYAKI$ ../repo/repo init -u  https://gitee.com/weidongshan/manifests.git -b linux-sdk -m  SSD202D/dongshanpi-one_takoyaki_dlc00v030.xml --no-repo-verify
+book@100ask:~/DongshanPiOne-TAKOYAKI$ ../repo/repo sync -j4
 ```
 获取成功后的源码目录结构如下
 ```shell

@@ -15,7 +15,7 @@
 
 ### 烧写更新
 * 下载默认系统镜像
- * 点击下载链接：https://cowtransfer.com/s/78b5fb53fe0140 
+ * 点击下载链接：https://cowtransfer.com/s/c82c42aabbf041 
 下载后会得到一个名为 `images.zip` 的压缩包，需要先用压缩工具进行解压缩，解压缩后的文件列表如下。
 ``` shell
 appconfigs.ubifs
