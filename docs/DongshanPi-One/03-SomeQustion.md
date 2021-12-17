@@ -2,7 +2,7 @@
 ## 烧写默认系统
 * 参考操作演示视频教程
 <iframe width="800" height="600"
-  src="//player.bilibili.com/player.html?aid=807146816&bvid=BV1W34y1X7gJ&cid=457686134&page=1">
+  src="//player.bilibili.com/player.html?aid=677495111&bvid=BV1Rm4y1X7GZ&cid=462849541&page=1">
 </iframe>
 
 ### 准备工作
