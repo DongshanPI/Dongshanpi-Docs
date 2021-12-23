@@ -150,11 +150,15 @@ nav:
       - 编译烧写Kernel: 'DongshanPi-One/07-BuildFlashKernel.md'
       - 编译烧写系统: 'DongshanPi-One/08-BuildFlashSystem.md'
       - 应用Demo示例: 'DongshanPi-One/16-RunDempApp.md'
+    - Linux社区版本:
+      - 社区版本简述: 'DongshanPi-One/15-SupportLinuxCommunity.md'
+      - Das u-boot开发: 'DongshanPi-One/17-Das u-boot.md'
+      - Linux Kernel开发: 'DongshanPi-One/18-LinuxKernel.md'
+      - rootfs开发: 'DongshanPi-One/19.Buildroot.md'
+      - 开源工具: 'DongshanPi-One/19.OpensourceMstarTools.md'      
     - 系统加强:      
       - 支持的模块: 'DongshanPi-One/09-SupportHardware.md'
       - 支持的工具: 'DongshanPi-One/10-SupportTools.md'
       - 支持的其它系统: 'DongshanPi-One/11-SupportOtherSystem.md'
-    - Linux社区版本:
-      - 社区版本开发: 'DongshanPi-One/15-SupportLinuxCommunity.md'
   - 关于我们:
      - 简介: 'About.md'
