@@ -9,6 +9,7 @@
   | 板子名称        | 页面地址   |
   | :-----------   | :------- |
   | 東山Pi壹号  | [点击跳转](DongshanPi-One/01-BoardIntroduction/) |
+  | 東山Pi柒号  | [点击跳转](DongshanPi-Seven/01-BoardIntroduction/) |
 
 ## 配套的交流社区
 

@@ -160,5 +160,7 @@ nav:
       - 支持的模块: 'DongshanPi-One/09-SupportHardware.md'
       - 支持的工具: 'DongshanPi-One/10-SupportTools.md'
       - 支持的其它系统: 'DongshanPi-One/11-SupportOtherSystem.md'
+  - 東山Pi柒号:
+    - 主板简介: 'DongshanPi-Seven/01-BoardIntroduction.md'
   - 关于我们:
      - 简介: 'About.md'
