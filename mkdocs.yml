@@ -144,7 +144,7 @@ nav:
     - 快速上手:
       - 连接开发板: 'DongshanPi-One/03-QuickStart.md'
       - 常见问题: 'DongshanPi-One/03-SomeQustion.md'
-    - 原厂SDK开发入门:
+    - 快速项目开发:
       - 获取源码: 'DongshanPi-One/05-GetSourceCode.md'
       - 编译烧写Boot: 'DongshanPi-One/06-BuildFlashBoot.md'
       - 编译烧写Kernel: 'DongshanPi-One/07-BuildFlashKernel.md'
@@ -162,5 +162,11 @@ nav:
       - 支持的其它系统: 'DongshanPi-One/11-SupportOtherSystem.md'
   - 東山Pi柒号:
     - 主板简介: 'DongshanPi-Seven/01-BoardIntroduction.md'
+    - 配套资源: 'DongshanPi-Seven/02-SupportingResources.md' 
+    - 快速上手:
+      - 连接开发板: 'DongshanPi-Seven/03-QuickStart.md'
+      - 常见问题: 'DongshanPi-Seven/04-SomeQustion.md'
+    - 嵌入式开发:
+      - 获取源码:  'DongshanPi-Seven/05-GetSourceCode.md'
   - 关于我们:
      - 简介: 'About.md'
