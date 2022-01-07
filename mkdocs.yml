@@ -166,7 +166,19 @@ nav:
     - 快速上手:
       - 连接开发板: 'DongshanPi-Seven/03-QuickStart.md'
       - 常见问题: 'DongshanPi-Seven/04-SomeQustion.md'
-    - 嵌入式开发:
-      - 获取源码:  'DongshanPi-Seven/05-GetSourceCode.md'
+    - APP应用开发:
+      - LVGL界面开发: 'DongshanPi-Seven/05-LVGL_GuiDevelopment.md'
+      - QT界面开发:  'DongshanPi-Seven/05-QT_GuiDevelopment.md'
+      - MQTT协议开发: 'DongshanPi-Seven/05-MQTT_Development.md'    
+      - Socket网路编程: 'DongshanPi-Seven/05-Socket_Development.md'
+      - Web服务开发:  'DongshanPi-Seven/05-Web_Developmen.md'
+      - ALSA音频编程: 'DongshanPi-Seven/05-ALSA_Developmen.md'      
+      - V4L2视频编程: 'DongshanPi-Seven/05-V4L2_Developmen.md'
+      - CAN应用编程:  'DongshanPi-Seven/05-CAN_Developmen.md'
+      - D-bus通信编程: 'DongshanPi-Seven/05-D-BUS_Developmen.md'
+    - 嵌入式系统开发:
+      - Linux驱动开发: 'DongshanPi-Seven/06-GetSourceCode.md'
+      - OTA升级开发: 'DongshanPi-Seven/07-SYSTEM_OTA.md'
+      - OPTEE开发: 'DongshanPi-Seven/09-OPTEE-OS.md'
   - 关于我们:
      - 简介: 'About.md'
