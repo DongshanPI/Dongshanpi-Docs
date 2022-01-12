@@ -165,7 +165,8 @@ nav:
     - 配套资源: 'DongshanPi-Seven/02-SupportingResources.md' 
     - 快速上手:
       - 连接开发板: 'DongshanPi-Seven/03-QuickStart.md'
-      - 常见问题: 'DongshanPi-Seven/04-SomeQustion.md'
+      - 烧写&恢复系统: 'DongshanPi-Seven/04.FlashDefaultSystem.md'
+      - 其它常见问题: 'DongshanPi-Seven/04-SomeQustion.md'
     - APP应用开发:
       - LVGL界面开发: 'DongshanPi-Seven/05-LVGL_GuiDevelopment.md'
       - QT界面开发:  'DongshanPi-Seven/05-QT_GuiDevelopment.md'

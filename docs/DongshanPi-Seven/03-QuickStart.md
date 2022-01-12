@@ -35,10 +35,10 @@
 ![连接](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/QuickStart-05.png)
 
 ### 3. 进入系统shell
-使用串口工具成功打开串口后，可以直接按下 Enter 键 进入shell，当然您也可以按下板子上的 `Reset`复位键，来查看完整的系统信息。
+使用串口工具成功打开串口后，可以直接输入 `root`用户名按下 Enter 键就可以直接登录系统了，当然您也可以按下板子上的 `Reset`复位键，来查看完整的系统信息。
 ![](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/QuickStart-06.png)
 
-注意：星辰原厂系统没有登录密码，直接启动进入文件系统内shell终端。
+
 
 
 ## 扩展硬件
