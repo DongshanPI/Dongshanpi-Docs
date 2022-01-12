@@ -5,7 +5,6 @@
 ### 1. 连接串口线
 将配套的TypeC线一段连接至开发板的串口/供电接口，另一端连接至电脑USB接口，连接成功后板载的红色电源灯会亮起。
 默认情况下系统会自动安装串口设备驱动，如果没有自动安装，可以使用驱动精灵来自动安装。
-
 * 对于Windows系统
 此时Windows设备管理器 在 端口(COM和LPT) 处会多出一个串口设备，一般是以 `USB-Enhanced-SERIAL CH9102`开头，您需要留意一下后面的具体COM编号，用于后续连接使用。
 
@@ -36,10 +35,8 @@
 
 ### 3. 进入系统shell
 使用串口工具成功打开串口后，可以直接输入 `root`用户名按下 Enter 键就可以直接登录系统了，当然您也可以按下板子上的 `Reset`复位键，来查看完整的系统信息。
-![](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/QuickStart-06.png)
 
-
-
+![DongshanPi-Seven_FlashDefaultSystem-008](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanPI-Seven/DongshanPi-Seven_FlashDefaultSystem-010.png)
 
 ## 扩展硬件
 

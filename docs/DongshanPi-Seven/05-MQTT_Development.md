@@ -6,7 +6,7 @@
 * ubuntu电脑可以和开发板之间网络互通
 
 ## 获取配套资源
-> 获取lvgl开发配套的交叉编译器以及系统镜像。
+> 获取Mqtt开发配套的交叉编译器以及系统镜像。
 
 * 自行获取：打开 https://github.com/DongshanPI/buildroot-external-dongshanpiseven/releases/ 页面点击最新的版本，找到名为 `dongshanpiseven_standard-aiot_defconfig.tar.gz` 的压缩包，点击下载。
 * 备用站点:  https://github.91chi.fun//https://github.com//DongshanPI/buildroot-external-dongshanpiseven/releases/download/v0.1.1-beta.1/dongshanpiseven_standard-aiot_defconfig.tar.gz
