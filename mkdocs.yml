@@ -181,5 +181,7 @@ nav:
       - Linux驱动开发: 'DongshanPi-Seven/06-GetSourceCode.md'
       - OTA升级开发: 'DongshanPi-Seven/07-SYSTEM_OTA.md'
       - OPTEE开发: 'DongshanPi-Seven/09-OPTEE-OS.md'
+  - 東山-哪吒STU:
+    - 主板简介: 'Dongshan-NezhaSTU/01-BoardIntroduction.md'      
   - 关于我们:
      - 简介: 'About.md'
