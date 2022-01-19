@@ -29,13 +29,13 @@ $ git clone -b st/2021.02 https://github.com/bootlin/buildroot.git
   
 
 ```bash
-wget  https://buildroot.org/downloads/buildroot-2021.02.8.tar.bz2https://buildroot.org/downloads/buildroot-2021.02.8.tar.bz2
+wget  https://buildroot.org/downloads/buildroot-2021.02.8.tar.bz2
 ```
 
  获取buildroot源码后，可以单独获取我们支持 `东山PI柒号` 的 `BR2_EXTERNAL` 源码。
 
 ```bash
-$ git clone -b st/2021.02 https://github.com/bootlin/buildroot-external-dongshanpiseven.git
+$ git clone  https://github.com/bootlin/buildroot-external-dongshanpiseven.git
 ```
 
 获取完成后，可以看到 一个 `buildroot`目录和一个 `buildroot-external-dongshanpiseven`目录。
