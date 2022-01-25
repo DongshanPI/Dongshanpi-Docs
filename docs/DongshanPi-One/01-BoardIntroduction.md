@@ -1,4 +1,6 @@
 [ [中文](https://dongshanpi.com/DongshanPi-One/01-BoardIntroduction) | [English](https://dongshanpi.com/DongshanPi-One/01-BoardIntroduction_EN) ]
+
+* 东山PI壹号问题反馈交流区 https://github.com/DongshanPI/Dongshanpi-Docs/discussions/2
 # 东山Pi壹号-开发板
 
 > 东山Pi壹号开发板是联合芯片原厂星宸科技一起推的最小Linux开发板，使用的是SSD202D主控芯片，最小开发板接口只保留了几个常见接口 包含LED灯 按键 FPCRGB显示接口 以及一路TYPE C USBHOST接口 还有一个专门用来供电和调试二合一的 TypeC接口，背面同时增加了SD卡卡槽 也保留了专门的烧录接口。
@@ -6,6 +8,7 @@
 * 星宸科技( SigmaStar)成立于2017年，是一家专注于人工智能视觉系统芯片领域的科技公司，产品在智能安防、智能车载、智能物联等多个细分领域全球领先。
 
 * 创始团队发源于晨星半导体高管团队（Mstar，显示及电视芯片领域全球NO.1，三星、LG、TCL、华星光电、康佳、海信、京东方等公司最大芯片供应商，已与联发科合并）。
+
 
 ## 硬件描述
 
@@ -30,6 +33,28 @@
 * 东山Pi壹号 开发板原理图文件：https://cowtransfer.com/s/9b745ce262544c
 
 ## 开发资源描述
+### 配套CPU开发手册
+
+各位同学 期待已久的东山PI壹号 (SSD202D)部分常用外设CPU开发手册已经公开出来了，里面包含寄存器地址及描述哦，大家快来下载阅读。<br>
+获取连接：：https://cowtransfer.com/s/0756a2af637745 里面包含<br>
+
+* SSD202D_CHIPTOP_百问网.pdf
+* SSD202D_CLKGEN_百问网.pdf
+* SSD202D_EMAC_百问网.pdf
+* SSD202D_GPIO_百问网.pdf
+* SSD202D_GPI_INT_百问网.pdf
+* SSD202D_I2C_百问网.pdf
+* SSD202D_INTR_CPUINT_百问网.pdf
+* SSD202D_INTR_CTRL_百问网.pdf
+* SSD202D_IR_百问网.pdf
+* SSD202D_PADTOP_百问网.pdf
+* SSD202D_PWM_百问网.pdf
+* SSD202D_RTC_百问网.pdf
+* SSD202D_SAR_百问网.pdf
+* SSD202D_SPI_百问网.pdf
+* SSD202D_TIMER_百问网.pdf
+* SSD202D_UART & FUART_百问网.pdf
+* SSD202D_WDT_百问网.pdf
 
 ### 芯片原厂配套SDK
 
