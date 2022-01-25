@@ -1,5 +1,6 @@
 [ [中文](https://dongshanpi.com/DongshanPi-One/01-BoardIntroduction) | [English](https://dongshanpi.com/DongshanPi-One/01-BoardIntroduction_EN) ]
-# 东山Pi壹号-开发板
+
+# DongshanPi-ONE Boards
 
 > 东山Pi壹号开发板是联合芯片原厂星宸科技一起推的最小Linux开发板，使用的是SSD202D主控芯片，最小开发板接口只保留了几个常见接口 包含LED灯 按键 FPCRGB显示接口 以及一路TYPE C USBHOST接口 还有一个专门用来供电和调试二合一的 TypeC接口，背面同时增加了SD卡卡槽 也保留了专门的烧录接口。
 

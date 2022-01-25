@@ -3,7 +3,7 @@
 简述：东山Pi壹号开发板使用的内核是基于LinuxKernel主线4.9版本进行适配支持，支持了一些自有的控制器等专有的处理单元等驱动模块。
 
 ## 编译Kernel
-首先进入kernel根目录，在编译之前还是需要确认清楚交叉编译工具链等环境是否配置成功，如果不确定 可以参考 [配置交叉编译工具链](DongshanPi-One/05-GetSourceCode/#_4) 章节。
+首先进入kernel根目录，在编译之前还是需要确认清楚交叉编译工具链等环境是否配置成功，如果不确定 可以参考 [配置交叉编译工具链](https://dongshanpi.com/DongshanPi-One/05-GetSourceCode/#_4) 章节。
 
 > make infinity2m_spinand_ssc011a_s01a_minigui_defconfig;
 

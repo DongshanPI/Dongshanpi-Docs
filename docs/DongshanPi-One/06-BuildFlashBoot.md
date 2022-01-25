@@ -8,7 +8,7 @@
 
 ## 编译bootloader
 
-首先进入boot源码根目录下，在编译之前需要确认清楚交叉编译工具链等环境是否配置成功，如果不确定 可以参考 [配置交叉编译工具链](DongshanPi-One/05-GetSourceCode/#_4) 章节。
+首先进入boot源码根目录下，在编译之前需要确认清楚交叉编译工具链等环境是否配置成功，如果不确定 可以参考 [配置交叉编译工具链](/DongshanPi-One/05-GetSourceCode/#_4) 章节。
 
 > make infinity2m_spinand_defconfig
 
@@ -57,16 +57,34 @@ book@100ask:~/DongshanPiOne-TAKOYAKI/boot$  cp u-boot_spinand.xz.img.bin  ../pro
 > nand write.e 0x21000000 UBOOT1 ${filesize}
 
 
-* 参考操作示例
-``` shell
 
+#### 使用开源社区工具烧写
+* 开源社区工具更详细的说明请看；[](https://dongshanpi.com/DongshanPi-One/19.OpensourceMstarTools/)
+* 社区版烧写工具 连线介绍 https://item.taobao.com/item.htm?id=665728385852
+* 将烧写工具连接好烧录线后，将烧录器和开发板烧写接口连接好，拨码开关切换为烧写模式(拨码开发白色拨码切换到非NO方向)。
+![FlashTools-01](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/FlashTools-01.png)
+之后我们按下 主板上`Reset`键，同时执行如下烧写命令，其中第一句话`sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -e`是整个 擦除 flash 命令，建议执行。
 
+注意:烧写操作是在ubuntu-18烧写，需要将烧写工具挂载到ubuntu系统内，挂载成功后系统会自动装在驱动模块，此时设备管理器会多出一个`/dev/i2c-0`的设备节点，其中烧写命令中 ` -l `参数指定的是烧写文件的长度(大小)，如果你修改了`u-boot_spinand.xz.img.bin`文件，请确认大小是否在这个区间内。
 
+```shell
+sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -e
+
+sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -w GCIS.bin
+
+sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -a 0x140000 -l 0x6000 -w IPL.bin
+
+sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -a 0x200000 -l 0x5800 -w IPL_CUST.bin
+
+sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -a 0x2C0000 -l 0x3B800 -w u-boot_spinand.xz.img.bin
 ```
+
+
+
 ### 使用专门的烧写器烧写
 注意：**本方式适用于空片烧录或者板子无法进入Uboot控制台使用其它方式烧录的情况**。
 
-首先关闭串口调试工具，接下来打开烧写工具：烧写工具下载 [点击跳转](DongshanPi-One/10-SupportTools/)  选择合适的下载方式下载。
+首先关闭串口调试工具，接下来打开烧写工具：烧写工具下载 [点击跳转](https://dongshanpi.com/DongshanPi-One/10-SupportTools/)  选择合适的下载方式下载。
 其中烧录器购买链接地址：
 
 同时将烧录器和开发板烧写接口连接好，拨码开关切换为烧写模式(拨码开发白色拨码切换到非NO方向)。
