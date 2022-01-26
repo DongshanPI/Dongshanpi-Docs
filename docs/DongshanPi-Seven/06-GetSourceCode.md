@@ -51,7 +51,7 @@ $ cd buildroot/
  接下来执行配置命令，来使用 `dongshanpiserven_core_defconfig`配置文件进行配置。
 
 ```bash
-buildrot/ $ make BR2_EXTERNAL=../buildroot-external-dongshanpiseven dongshanpiserven_core_defconfig
+buildrot/ $ make BR2_EXTERNAL=../buildroot-external-dongshanpiseven dongshanpiseven_core_defconfig
 ```
 
  指定配置文件后，可以使用 `make menuconfig` 命令来增加自己需要的包。
