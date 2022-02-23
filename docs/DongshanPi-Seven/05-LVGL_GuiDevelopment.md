@@ -9,7 +9,7 @@
 > 获取lvgl开发配套的交叉编译器以及系统镜像。
 
 * 自行获取：打开 https://github.com/DongshanPI/buildroot-external-dongshanpiseven/releases/ 页面点击最新的版本，找到名为 `dongshanpiseven_standard-lvgl_defconfig.tar.gz` 的压缩包，点击下载。
-* 备用站点:  https://github.91chi.fun//https://github.com//DongshanPI/buildroot-external-dongshanpiseven/releases/download/v0.1.1-beta.1/dongshanpiseven_standard-lvgl_defconfig.tar.gz
+* 备用站点:  https://github.91chi.fun/https://github.com//DongshanPI/buildroot-external-dongshanpiseven/releases/download/v0.3.1-beta/dongshanpiseven_standard-lvgl_defconfig.tar.gz
 
 下载完成后使用解压缩工具进行解压缩，之后使用烧写工具烧写系统镜像至开发板内，最后并将配套的`arm-buildroot-linux-gnueabihf_sdk-buildroot.tar.gz` 交叉编译工具链拷贝至 Ubuntu系统内，并配置开发环境。
 
