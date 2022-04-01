@@ -333,12 +333,12 @@ mount -t nfs -o nolock 192.168.1.133:/home/book/nfs_rootfs /mnt
 #### 1.烧写救援系统
 * 烧写u-boot镜像
 ``` shell
-ubiupdatevol /dev/ubi0_0 u-boot.img
+ubiupdatevol /dev/ubi0_0 dongshanpione-u-boot.img
 ```
 
 * 烧写救援kernel镜像
 ``` shell
-ubiupdatevol /dev/ubi0_3 kernel-rescue.fit
+ubiupdatevol /dev/ubi0_3 dongshanpione-kernel-rescue.fit
 ```
 
 烧写完成后，重新复位，进入uboot命令行，执行如下命令设置启动参数,即可自动从刚才烧写好的分区加载救援系统镜像并启动。
@@ -349,12 +349,12 @@ setenv loadaddr 0x22000000; ubi readvol ${loadaddr} rescue 0x800000; bootm
 #### 2.烧写内核和根文件系统
 * 烧写正常的kernel镜像文件
 ``` shell
-ubiupdatevol /dev/ubi0_2 kernel.fit
+ubiupdatevol /dev/ubi0_2 dongshanpione-kernel.fit
 ```
 
 * 烧写根文件系统
 ``` shell
-ubiupdatevol /dev/ubi0_4 rootfs.squashfs
+ubiupdatevol /dev/ubi0_4 dongshanpione-rootfs.squashfs
 ```
 
 * 在uboot下设置启动参数，并保存到env内，之后我们就可以无需任何操作 完整的从系统启动了。
