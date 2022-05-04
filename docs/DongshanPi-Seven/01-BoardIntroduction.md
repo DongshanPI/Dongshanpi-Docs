@@ -6,7 +6,9 @@
   我们的配套资源主要分为两大部分，一部分是针对于只想学习嵌入式Linux应用开发快速做出一个项目，另一部分是想深入学习嵌入式Linux底层设备驱动开发，以及系统构建等。
 ## 硬件功能描述
 > 如下图所示， DongshanPISeven 开发板功能位置示例图。
-![DongshanPi-Seven01_BoardIntroduction-001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanPi-Seven01_BoardIntroduction-001.webp)
+
+![DongshanPi-Seven01_BoardIntroduction-01](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanPI-Seven/DongshanPi-Seven01_BoardIntroduction-01.png)
+
 
 * 开发板规格: 长宽约100mm x 70mm，为了方便连接使用了SODIMM接口。
 * 核心板规格：核心板所有的芯片都在屏蔽罩下面，可以取下屏蔽罩看到。
@@ -34,3 +36,6 @@
 * 原理图文件：https://cowtransfer.com/s/33c3b1ca51934e
 
 ## 扩展引脚定义
+
+## 配套项目底板
+![DongshanPi-Seven01_BoardAndBase-Introduction-01](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanPI-Seven/DongshanPi-Seven01_BoardAndBase-Introduction-01.png)
