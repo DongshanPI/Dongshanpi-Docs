@@ -37,15 +37,14 @@
 #### 使用Mobaxterm登录串口
 打开MobaXterm，点击左上角的“Session”，在弹出的界面选中“Serial”，如下图所示选择端口号（前面设备管理器显示的端口号COM21）、波特率（Speed 115200）、流控（Flow Control: none）,最后点击“OK”即可。步骤如下图所示。
 **注意：流控（Flow Control）一定要选择none，否则你将无法在MobaXterm中向串口输入数据**
+![Mobaxterm_serial_set_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Mobaxterm_serial_set_001.png)
 
-![Mobaxterm_serial_set_001](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\Mobaxterm_serial_set_001.png)
 
 
 
 ### 3. 进入系统shell
 使用串口工具成功打开串口后，可以直接按下 Enter 键 进入shell，当然您也可以按下板子上的 `Reset`复位键，来查看完整的系统信息。
-
-![bootlogs_001](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\bootlogs_001-165597547532824.png)
+![bootlogs_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/bootlogs_001.png)
 
 **系统默认的 登录 用户名 是 root 没有密码。**
 
@@ -82,8 +81,8 @@
 首先我们进入到 **AllwinnertechPhoeniSuit\AllwinnertechPhoeniSuitRelease20201225** 目录下 找到 **PhoenixSuit.exe** 双击运行。
 
 打开软件后 软件主界面如下图所示
+![PhoenixSuit_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/PhoenixSuit_001.png)
 
-![PhoenixSuit_001](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\PhoenixSuit_001.png)
 
 
 
@@ -91,17 +90,19 @@
 
 ​	点击完成后，不需要理会 弹出的信息，这时 我们拿起已经连接好的开发板，先按住 **FEL** 烧写模式按键，之后按一下 **RESET** 系统复位键，就可以自动进入烧写模式并开始烧写。
 
-![PhoenixSuit_002](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\PhoenixSuit_002.png)
+![PhoenixSuit_002](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/PhoenixSuit_002.png)
+
 
 ​	烧写时会提示烧写进度条，烧写完成后 开发板会自己重启。
 
-![PhoenixSuit_003](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\PhoenixSuit_003.png)
+![PhoenixSuit_003](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/PhoenixSuit_003.png)
+
 
 ### 启动系统
 
 一般情况下，烧写成功后 都会自动重启 启动系统，此时我们进入到 串口终端，可以看到它的启动信息，等所有启动信息加载完成，输入 root 用户名即可登录烧写好的系统内。
 
-![spinand-flashsystem_001](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\spinand-flashsystem_001.png)
+![spinand-flashsystem_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/spinand-flashsystem_001.png)
 
 
 
@@ -124,17 +125,17 @@
 
 * 使用SD CatFormat格式化TF卡，注意备份卡内数据。参考下图所示，点击刷新找到TF卡，然后点击 Format 在弹出的 对话框 点击 **是(Yes)**等待格式完成即可。
 
-![SDCardFormat_001](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\SDCardFormat_001.png)
+![SDCardFormat_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/SDCardFormat_001.png)
 
 * 格式化完成后，使用**Win32diskimage**工具来烧录镜像，参考下属步骤，找到自己的TF卡盘符，然后点击2 箭头 文件夹的符号 找到 刚才解压的 TF卡镜像文件  **dongshannezhastu-sdcard.img** 最后 点击 写入，等待写入完成即可。
 
-![wind32diskimage_001](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\wind32diskimage_001.png)
+![wind32diskimage_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/wind32diskimage_001.png)
+
 
 完成以后，就可以弹出TF卡，并将其插到 东山哪吒STU 最小板背面的TF卡槽位置处，此时连接 串口线 并使用 串口工具打开串口设备，按下开发板的 **RESET**复位按键就可以重启进入TF卡系统内了。
 
 ### 启动系统
-
-![sdcard-flashsystem_001](H:\东山-哪吒STU开发板\2022-06-04产品推广营销\手把手快速上手文档 视频\03-QuickStart.assets\sdcard-flashsystem_001.png)
+![sdcard-flashsystem_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/sdcard-flashsystem_001.png)
 
 **系统的登录用户名 root 密码为空**
 
