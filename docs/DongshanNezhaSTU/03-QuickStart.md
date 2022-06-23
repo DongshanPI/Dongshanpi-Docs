@@ -62,9 +62,9 @@
 ### 准备工作
 
 1. 东山哪吒STU开发板主板 x1
-2. 下载全志线刷工具AllwinnertechPhoeniSuit： https://weidongshan.coding.net/p/allwinner-d1s/d/Tools/git/raw/master/AllwinnertechPhoeniSuit.zip
+2. 下载全志线刷工具AllwinnertechPhoeniSuit： https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnertechPhoeniSuit.zip
 3. TypeC线 X2
-4. 下载SPI NAND最小系统镜像：https://weidongshan.coding.net/p/allwinner-d1s/d/Tools/git/raw/master/tina_d1-h-nezha_uart0.zip
+4. 下载SPI NAND最小系统镜像：https://gitlab.com/dongshanpi/tools/-/raw/main/tina_d1-h-nezha_uart0.zip
 
 ### 连接开发板
 
@@ -113,9 +113,9 @@
 2. Type-C线 X1
 3. TF卡读卡器  x1
 4. 8GB以上的 micro TF卡 x1
-5. win32diskimage工具 : https://weidongshan.coding.net/p/allwinner-d1s/d/Tools/git/raw/master/win32diskimager-1.0.0-install.exe
-6. SDcard专用格式化工具：https://weidongshan.coding.net/p/allwinner-d1s/d/Tools/git/raw/master/SDCardFormatter5.0.1Setup.exe
-7. TF卡最小系统镜像：https://weidongshan.coding.net/p/allwinner-d1s/d/Tools/git/raw/master/dongshannezhastu-sdcard.zip
+5. win32diskimage工具 : https://gitlab.com/dongshanpi/tools/-/raw/main/win32diskimager-1.0.0-install.exe
+6. SDcard专用格式化工具：https://gitlab.com/dongshanpi/tools/-/raw/main/SDCardFormatter5.0.1Setup.exe
+7. TF卡最小系统镜像：https://gitlab.com/dongshanpi/tools/-/raw/main/dongshannezhastu-sdcard.zip
 
 ### 运行烧写软件烧写
 
