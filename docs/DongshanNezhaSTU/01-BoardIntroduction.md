@@ -43,6 +43,6 @@
 * PCI-E接口：支持4G模块连接，可以进行PPPOE通信，开发板独立上网。
 * 排针：将多余IO全部引出，用于扩展传感器模块等，电源兼容树莓派 接口。
 
-![DongshanNezhaSTU-FullProject-Board_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU-FullProject-Board_001.png)
+![DongshanNezhaSTU-FullProject-Board_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-FullProject-Board_001.png)
 
 
