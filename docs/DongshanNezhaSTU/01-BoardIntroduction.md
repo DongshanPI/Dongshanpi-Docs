@@ -16,16 +16,16 @@
  * 背面：TF卡接口，可用于调试与连接TF卡启动系统。
  * 背面：256MB  SPI NAND FLASH 芯片。
 
-![DongshanNezhaSTU-TOP_001](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-TOP_001.png)
+![DongshanNezhaSTU-TOP_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-TOP_001.png)
+
 
 ### DIY全针脚底板
 全针脚DIY底板，将最小主板的所有未使用引脚全都引出到底板排针上，并提供全部硬件设计资料，可以自行使用 嘉立创 设计生产，也可以直接从我们这里购买。
 主要适用于喜欢DIY的同学。
 
-下图是**最小主板**与 **DIY全针脚底板**连接示意图。
-![DongshanNezhaSTU-DIY_003](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-DIY_003.jpg)
+下图是 **最小主板** 与 **DIY全针脚底板** 连接示意图。
 
-
+![DongshanNezhaSTU-DIY_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-DIY_003.jpg)
 
 ### 全功能项目底板
 
