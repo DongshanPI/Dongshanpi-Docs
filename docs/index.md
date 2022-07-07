@@ -13,9 +13,11 @@
   | :-----------   | :------- |
   | 東山Pi壹号  | [点击跳转](DongshanPi-One/01-BoardIntroduction/) |
   | 東山Pi柒号  | [点击跳转](DongshanPi-Seven/01-BoardIntroduction/) |
+  | 東山哪吒STU  | [点击跳转](DongshanNezhaSTU/01-BoardIntroduction/) |
 
 ## 配套的交流社区
-
+* 东山PI壹号QQ技术交流群：684518734
+* 东山哪吒STU QQ技术交流群：718037873
 
 ## 关于开源协议
   此页面使用了开源的Mkdoc文档框架，文档站点托管在GitHub上，每个页面都会有编辑按钮，大家可以一起参与编辑或者提问改进此文档。
