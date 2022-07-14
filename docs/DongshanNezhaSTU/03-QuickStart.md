@@ -67,6 +67,7 @@
 2. 下载全志线刷工具AllwinnertechPhoeniSuit： https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnertechPhoeniSuit.zip
 3. TypeC线 X2
 4. 下载SPI NAND最小系统镜像：https://gitlab.com/dongshanpi/tools/-/raw/main/tina_d1-h-nezha_uart0.zip
+5. 下载全志USB烧录驱动：https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnerUSBFlashDeviceDriver.zip
 
 ### 连接开发板
 
@@ -74,6 +75,32 @@
 
 
 ![DongshanNezhaSTU-SPI-NAND_FLASH_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-SPI-NAND_FLASH_001.jpg)
+
+
+
+### 安装usb驱动
+
+在我们连接好开发板以后，先按住 **FEL** 烧写模式按键，之后按一下 **RESET** 系统复位键，就可以自动进入烧写模式。
+
+这时我们可以看到设备管理器  **通用串行总线控制器** 弹出一个  未知设备 ，这个时候我们就需要把我们提前下载好的 **全志USB烧录驱动** 进行修改，然后将解压缩过的 **全志USB烧录驱动**  压缩包，解压缩，可以看到里面有这么几个文件。
+
+```bash
+InstallUSBDrv.exe
+drvinstaller_IA64.exe
+drvinstaller_X86.exe
+UsbDriver/          
+drvinstaller_X64.exe   
+install.bat
+```
+
+对于wind7系统的同学，只需要以管理员 打开   `install.bat` 脚本，等待安装，在弹出的 是否安装驱动的对话框里面，点击安装即可。
+
+对于wind10/wind11系统的同学，需要在设备管理器里面进行手动安装驱动。
+
+方法可以百度，或者看配套的视频教程，这里我们只需要在 选择 安装驱动目录的时候 选中  解压后的  全志USB烧录驱动  文件夹里面的  UsbDriver/ 目录即可，系统就会根据你的环境，自动安装配套架构的设备驱动了。
+
+
+
 ### 运行软件烧写
 
 将下载下来的全志线刷工具 **AllwinnertechPhoeniSuit** 解压缩，同时将**SPI NAND最小系统镜像**下载下来也进行解压缩。
