@@ -1,11 +1,16 @@
 # 东山哪吒STU硬件简述
+
+* 此开发板的任何问题都可以在我们的论坛交流讨论 https://forums.100ask.net/c/aw/15 
+
 ## 硬件简述
+
 东山哪吒STU开发板是一款针对于教育学习专门设计的一系列开发板，分别有
 
  * 最小主板：只保留一些学习调试最基本接口，做到最具性价比，**仅售149**。
  * 全阵脚引出的DIY底板：主要是供DIY极客爱好者使用，可以自行DIY设计。 **仅售29**
  * 专门的配套项目底板：针对于芯片的使用场景设计出专门的项目底板，结合课程学习使用。 **仅售149**
  * 配套的邮票孔封装D1s核心板：针对于企业级客户或者做产品的客户使用。
+
 ### 最小主板
 如下图板载资源所示最小主板有:
 
@@ -44,5 +49,3 @@
 * 排针：将多余IO全部引出，用于扩展传感器模块等，电源兼容树莓派 接口。
 
 ![DongshanNezhaSTU-FullProject-Board_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-FullProject-Board_001.png)
-
-

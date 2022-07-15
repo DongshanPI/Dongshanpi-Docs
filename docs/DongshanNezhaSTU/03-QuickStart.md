@@ -97,6 +97,32 @@ install.bat
 
 对于wind10/wind11系统的同学，需要在设备管理器里面进行手动安装驱动。
 
+如下图所示，在第一次插入OTG设备，进入烧写模式设备管理器会弹出一个未知设备。
+![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_001.png)
+
+接下来鼠标右键点击这个未知设备，在弹出的对话框里， 点击浏览我计算机以查找驱动程序软件。
+![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_002.png)
+
+之后在弹出新的对话框里，点击浏览找到我们之前下载好的 usb烧录驱动文件夹内，找到 `UsbDriver/` 这个目录，并进入，之后点击确定即可。
+![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_007.png)
+
+注意进入到  `UsbDriver/`  文件夹，然后点击确定，如下图所示。
+![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_003.png)
+
+此时，我们继续点击 **下一页** 按钮，这时系统就会提示安装一个驱动程序。 
+在弹出的对话框里，我们点击 始终安装此驱动程序软件 等待安装完成。
+![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_004.png)
+
+安装完成后，会提示，Windows已成功更新你的驱动程序。
+![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_005.png)
+
+
+最后我们可以看到，设备管理器 里面的未知设备 变成了一个 `USB Device(VID_1f3a_efe8)`的设备，这时就表明设备驱动已经安装成功。
+![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_006.png)
+
+
+
+
 方法可以百度，或者看配套的视频教程，这里我们只需要在 选择 安装驱动目录的时候 选中  解压后的  全志USB烧录驱动  文件夹里面的  UsbDriver/ 目录即可，系统就会根据你的环境，自动安装配套架构的设备驱动了。
 
 

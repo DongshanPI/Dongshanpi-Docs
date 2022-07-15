@@ -47,5 +47,4 @@
 
 **有简单文档**
 
-* https://bbs.aw-ol.com/topic/1208/buildroot-2022-2%E4%B8%BB%E7%BA%BF%E5%B7%B2%E7%BB%8F%E6%94%AF%E6%8C%81nezha%E5%BC%80%E5%8F%91%E6%9D%BF-%E5%8E%9F%E6%9D%A5%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E5%A4%A7%E4%BD%AC%E5%96%9C%E6%AC%A2%E8%BF%99%E6%AC%BE%E8%8A%AF%E7%89%87-%E7%9C%9F%E7%9A%84%E5%A4%AA%E9%A6%99%E4%BA%86?_=1655955085023
-
+* https://bbs.aw-ol.com/topic/1208/buildroot-2022
