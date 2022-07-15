@@ -107,6 +107,7 @@ install.bat
 ![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_007.png)
 
 注意进入到  `UsbDriver/`  文件夹，然后点击确定，如下图所示。
+
 ![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_003.png)
 
 此时，我们继续点击 **下一页** 按钮，这时系统就会提示安装一个驱动程序。 
@@ -119,12 +120,6 @@ install.bat
 
 最后我们可以看到，设备管理器 里面的未知设备 变成了一个 `USB Device(VID_1f3a_efe8)`的设备，这时就表明设备驱动已经安装成功。
 ![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_006.png)
-
-
-
-
-方法可以百度，或者看配套的视频教程，这里我们只需要在 选择 安装驱动目录的时候 选中  解压后的  全志USB烧录驱动  文件夹里面的  UsbDriver/ 目录即可，系统就会根据你的环境，自动安装配套架构的设备驱动了。
-
 
 
 ### 运行软件烧写
