@@ -1,9 +1,7 @@
 
 ## 软件资源简述
-
-
-
 ### BWW提供的SDK
+* 百度网盘获取地址 链接：https://pan.baidu.com/s/1f1K82iA0kNibuMlZu34i0g?pwd=9rds  提取码：9rds 
 
 #### Buildoot For Dongshan NezhaSTU D1-H
 
