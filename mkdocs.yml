@@ -1,21 +1,21 @@
 # Project information
-site_name: 東山Pi
+site_name: DongshanPI Board Documentation Center.
 site_url: https://github.com/DongshanPI/Dongshanpi-Docs.git
-site_author: 100ask
+site_author: 100askTeam
 site_description: >-
-  DongShan Pi boards Start Page.
-copyright: Copyright &copy; 2008 - 2021 100ask Team
-edit_uri: https://github.com/DongshanPI/Dongshanpi-Docs/tree/master/docs
+  DongShanPI boards Docs Start Page.
+copyright: Copyright &copy; 2008 - 2022 100ask Team
+edit_uri: edit/master/docs/
+repo_url: https://github.com/DongshanPI/Dongshanpi-Docs/
+repo_name: DongshanPI/Dongshanpi-Docs
 
 # Configuration
 theme:
-  name: null
-  custom_dir: !ENV [THEME_DIR, "material"]
-  language: custom
+  name: material
+  custom_dir: overrides
   # Static files
   static_templates:
     - 404.html
-
   # Don't include MkDocs' JavaScript
   include_search_page: true
   search_index_only: true
@@ -29,7 +29,7 @@ theme:
     # - navigation.expand
     - navigation.indexes
     # - navigation.instant
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
@@ -37,11 +37,12 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    # - toc.follow
     # - toc.integrate
   palette:
     - scheme: default
       primary: teal
-      accent: teal
+      accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -61,9 +62,22 @@ theme:
 # Plugins
 plugins:
   - search
+  - markmap:
+      base_path: docs
+      encoding: utf-8
+      file_extension: .mm.md
+      d3_version: 6.7.0
+      lib_version: 0.14.1
+      view_version: 0.14.0 
+#  - offline  
   - minify:
       minify_html: true
-
+#  - social:
+#      cards_color:
+#        fill: "#0FF1CE" 
+#        text: "#FFFFFF"
+  - search:
+      jieba_dict: dict.txt 
 extra:
   analytics:
     provider: google
@@ -81,7 +95,8 @@ extra:
           data: 0
           note: >- # 
             Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target=_blank>feedback form</a>.    
+            using our <a href="..." target=_blank>feedback form</a>.      
+  homepage: https://code.100ask.net
   alternate:
     - name: English
       link: /en/
@@ -89,6 +104,7 @@ extra:
     - name: 中文
       link: /zh/
       lang: zh
+
       
 #  disqus: dongshanpi-com
 
@@ -101,20 +117,26 @@ markdown_extensions:
   - footnotes
   - meta
   - md_in_html
+  - tables  
   - toc:
       slugify: !!python/name:pymdownx.slugs.uslugify  
   - toc:
       permalink: true
+  - toc:
+      title: On this page
+  - toc:
+      permalink_title: Anchor link to this section for reference
+  - toc:
+      toc_depth: 3      
+  - pymdownx.arithmatex:
+      generic: true        
   - pymdownx.arithmatex:
       generic: true
+
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -123,22 +145,35 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.tilde  
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true   
+  - pymdownx.snippets      
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
-          class: mermaid-experimental
+          class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - def_list      
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.tilde
+
   
 # Page tree
 nav:
   - 根页面:
     - index.md
-  - 東山Pi壹号:
+  - DongshanPI-壹号:
     - 主板简介: 'DongshanPi-One/01-BoardIntroduction.md'
     - 配套资源: 'DongshanPi-One/02-SupportingResources.md'
     - 快速上手:
@@ -160,7 +195,7 @@ nav:
       - 支持的模块: 'DongshanPi-One/09-SupportHardware.md'
       - 支持的工具: 'DongshanPi-One/10-SupportTools.md'
       - 支持的其它系统: 'DongshanPi-One/11-SupportOtherSystem.md'
-  - 東山Pi柒号:
+  - DongshanPI-柒号:
     - 主板简介: 'DongshanPi-Seven/01-BoardIntroduction.md'
     - 配套资源: 'DongshanPi-Seven/02-SupportingResources.md' 
     - 快速上手:
@@ -181,7 +216,7 @@ nav:
       - Linux驱动开发: 'DongshanPi-Seven/06-GetSourceCode.md'
       - OTA升级开发: 'DongshanPi-Seven/07-SYSTEM_OTA.md'
       - OPTEE开发: 'DongshanPi-Seven/09-OPTEE-OS.md'
-  - 東山-哪吒STU:
+  - DongshanPI-哪吒STU:
     - 主板简介: 'DongshanNezhaSTU/01-BoardIntroduction.md'
     - 配套资源: 'DongshanNezhaSTU/02-SupportingResources.md'
     - 快速启动: 'DongshanNezhaSTU/03-QuickStart.md'
@@ -197,6 +232,22 @@ nav:
       - 支持wifi蓝牙组件: 'DongshanNezhaSTU/10-1_BuildrootSupportWifiBluetooth.md'
     - Tina-SDK系统开发:      
       - 编译构建最小系统: 'DongshanNezhaSTU/11-Tina-SDK_DevelopmentGuide.md'
+  - DongshanPI-D1s:
+    - 主板简介: 'DongshanPI-D1s/01-BoardIntroduction.md'        
+  - 柚木PI-蜥蜴:
+    - 主板简介: 'YuzukiHD-Lizard/01-BoardIntroduction.md'      
+  - 柚木PI-变色龙:
+    - 主板简介: 'YuzukiHD-Chameleon/01-BoardIntroduction.md'                  
   - 关于我们:
-     - 简介: 'About.md'
-     
+     - 简介: 'About.md'   
+
+extra_javascript:
+  - javascripts/shortcuts.js
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/d3@6.7.0/dist/d3.min.js
+  - https://unpkg.com/markmap-lib@0.14.1/dist/browser/index.min.js
+  - https://unpkg.com/markmap-view@0.14.0/dist/index.min.js  

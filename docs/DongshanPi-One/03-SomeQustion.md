@@ -42,7 +42,7 @@ uboot_s.bin
 * 进入uboot命令行执行烧写命令
   此时确保开发板已经可以通过串口工具进行交互，按下复位键，紧接着在有启动信息打印时一直长按键盘 `enter` 回车键三秒左右松开，即可进入uboot命令行界面内。
   进入uboot命令行以后 可以直接输入 `dstar` 命令，就会自动进行更新，等待更新 结束 自动重启系统即可。
-![SomeQustion-01](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/SomeQustion-01.png)  
+![SomeQustion-01](https://cdn.staticaly.com/gh/codebug8/DongshanPi-Photos@master/SomeQustion-01.png)  
 
 更新系统完整的log 输出，仅限参考：  
 

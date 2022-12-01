@@ -63,7 +63,7 @@ book@100ask:~/DongshanPiOne-TAKOYAKI/boot$  cp u-boot_spinand.xz.img.bin  ../pro
 * 社区版烧写工具 连线介绍 https://item.taobao.com/item.htm?id=665728385852
 * 将烧写工具连接好烧录线后，将烧录器和开发板烧写接口连接好，拨码开关切换为烧写模式(拨码开发白色拨码切换到非NO方向)。
 
-![Mstar-I2C-Flash-tools](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanPI-ONE/Mstar-I2C-Flash-tools.png)<br>
+![Mstar-I2C-Flash-tools](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-ONE/Mstar-I2C-Flash-tools.png)<br>
 
 之后我们按下 主板上`Reset`键，同时执行如下烧写命令，其中第一句话`sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -e`是整个 擦除 flash 命令，建议执行。
 
@@ -90,11 +90,11 @@ sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -a 0x2C0000 -l 0x3B800 -w u-boot_spina
 其中烧录器购买链接地址：
 
 同时将烧录器和开发板烧写接口连接好，拨码开关切换为烧写模式(拨码开发白色拨码切换到非NO方向)。
-![FlashTools-01](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/FlashTools-01.png)
+![FlashTools-01](https://cdn.staticaly.com/gh/codebug8/DongshanPi-Photos@master/FlashTools-01.png)
 
 电脑解压缩下载后的 **ISP_5.0.18.zip** 烧写工具压缩包，打开 `Flash_Tool_5.0.18.exe`，点击Connect，建立连接状态（Connect必须确保关闭串口工具，否则会出现争抢串口资源问题）选择Flash Type为Nand Flash。
 
-![FlashTools-02](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/FlashTools-02.png)
+![FlashTools-02](https://cdn.staticaly.com/gh/codebug8/DongshanPi-Photos@master/FlashTools-02.png)
 
 接下来需要根据根据以下的分区以及分区起始地址，按照以下方法依次烧录分区。
 其中 `GCIS.bin IPL.bin IPL_CUST.bin u-boot_spinand.xz.img.bin `这些文件可以从我们提供提供默认系统镜像中获取 [恢复默认系统]()。
@@ -108,17 +108,17 @@ sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -a 0x2C0000 -l 0x3B800 -w u-boot_spina
 
 * 烧录  GCIS.bin :参考下图 **1** 红框选择文件所在位置，(注意这些镜像文件来源于 前面 常见问题章节  更新默认系统部分)。
 选择完成后，参考下图 **2** 红框设置烧写地址，配置完成后可以点击 **箭头3** `Run`按钮来开始烧录。等待运行结束，直至提示Pass状态。
-![FlashTools-03](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/FlashTools-03.png)
+![FlashTools-03](https://cdn.staticaly.com/gh/codebug8/DongshanPi-Photos@master/FlashTools-03.png)
 
 * 烧录  IPL.bin :参考下图**1 **红框选择文件所在位置，(注意这些镜像文件来源于 前面 常见问题章节  更新默认系统部分)。
 选择完成后，参考下图 **2** 红框设置烧写地址，配置完成后可以点击 **箭头3** `Run`按钮来开始烧录。等待运行结束，直至提示Pass状态。
-![FlashTools-04](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/FlashTools-04.png)
+![FlashTools-04](https://cdn.staticaly.com/gh/codebug8/DongshanPi-Photos@master/FlashTools-04.png)
 
 * 烧录  IPL_CUST.bin :参考下图**1 **红框选择文件所在位置，(注意这些镜像文件来源于 前面 常见问题章节  更新默认系统部分)。
 选择完成后，参考下图 **2** 红框设置烧写地址，配置完成后可以点击 **箭头3** `Run`按钮来开始烧录。等待运行结束，直至提示Pass状态。
-![FlashTools-05](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/FlashTools-05.png)
+![FlashTools-05](https://cdn.staticaly.com/gh/codebug8/DongshanPi-Photos@master/FlashTools-05.png)
 
 * 烧录 u-boot_spinand.xz.img.bin :参考下图**1 **红框选择文件所在位置，(注意这些镜像文件来源于 前面 常见问题章节  更新默认系统部分)。
 选择完成后，参考下图 **2** 红框设置烧写地址，配置完成后可以点击 **箭头3** `Run`按钮来开始烧录。
-![FlashTools-06](https://cdn.jsdelivr.net/gh/codebug8/DongshanPi-Photos@master/FlashTools-06.png)
+![FlashTools-06](https://cdn.staticaly.com/gh/codebug8/DongshanPi-Photos@master/FlashTools-06.png)
 点击Run，等待运行结束，直至提示Pass状态。烧录完之后执行reset重启即可正常启动。

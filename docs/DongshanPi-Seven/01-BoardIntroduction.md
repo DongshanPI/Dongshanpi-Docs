@@ -7,7 +7,7 @@
 ## 硬件功能描述
 > 如下图所示， DongshanPISeven 开发板功能位置示例图。
 
-![DongshanPi-Seven01_BoardIntroduction-01](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanPI-Seven/DongshanPi-Seven01_BoardIntroduction-01.png)
+![DongshanPi-Seven01_BoardIntroduction-01](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-Seven/DongshanPi-Seven01_BoardIntroduction-01.png)
 
 
 * 开发板规格: 长宽约100mm x 70mm，为了方便连接使用了SODIMM接口。
@@ -38,4 +38,4 @@
 ## 扩展引脚定义
 
 ## 配套项目底板
-![DongshanPi-Seven01_BoardAndBase-Introduction-01](https://cdn.jsdelivr.net/gh/DongshanPI/Docs-Photos@master/DongshanPI-Seven/DongshanPi-Seven01_BoardAndBase-Introduction-01.png)
+![DongshanPi-Seven01_BoardAndBase-Introduction-01](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-Seven/DongshanPi-Seven01_BoardAndBase-Introduction-01.png)

@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-redirects
+      - run: pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-redirects mkdocs-markmap
       - run: mkdocs gh-deploy --force
