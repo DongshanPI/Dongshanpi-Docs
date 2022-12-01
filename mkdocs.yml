@@ -173,6 +173,28 @@ markdown_extensions:
 nav:
   - 根页面:
     - index.md
+  - DongshanPI-D1s:
+    - 主板简介: 'DongshanPI-D1s/01-BoardIntroduction.md'        
+  - 柚木PI-蜥蜴:
+    - 主板简介: 'YuzukiHD-Lizard/01-BoardIntroduction.md'      
+  - 柚木PI-变色龙:
+    - 主板简介: 'YuzukiHD-Chameleon/01-BoardIntroduction.md'
+  - DongshanPI-哪吒STU:
+    - 主板简介: 'DongshanNezhaSTU/01-BoardIntroduction.md'
+    - 配套资源: 'DongshanNezhaSTU/02-SupportingResources.md'
+    - 快速启动: 'DongshanNezhaSTU/03-QuickStart.md'
+    - 配置开发环境: 'DongshanNezhaSTU/06-ConfigHostEnv.md'
+    - 最小系统快速上手:
+      - 运行helloword应用:  'DongshanNezhaSTU/05-1_RunHelloword.md'
+      - 运行helloword驱动:  'DongshanNezhaSTU/05-2_RunHellowordDriver.md'
+    - Buildroot-SDK系统开发:      
+      - 编译构建最小系统: 'DongshanNezhaSTU/07-Buildroot-SDK_DevelopmentGuide.md'
+      - 编译开发bootloader: 'DongshanNezhaSTU/08-BuildBootloader.md'
+      - 编译开发kernel: 'DongshanNezhaSTU/09-BuildLinuxKernel.md'
+      - 编译开发Rootfs: 'DongshanNezhaSTU/10-BuildRootfs.md'
+      - 支持wifi蓝牙组件: 'DongshanNezhaSTU/10-1_BuildrootSupportWifiBluetooth.md'
+    - Tina-SDK系统开发:      
+      - 编译构建最小系统: 'DongshanNezhaSTU/11-Tina-SDK_DevelopmentGuide.md'          
   - DongshanPI-壹号:
     - 主板简介: 'DongshanPi-One/01-BoardIntroduction.md'
     - 配套资源: 'DongshanPi-One/02-SupportingResources.md'
@@ -215,31 +237,9 @@ nav:
     - 嵌入式系统开发:
       - Linux驱动开发: 'DongshanPi-Seven/06-GetSourceCode.md'
       - OTA升级开发: 'DongshanPi-Seven/07-SYSTEM_OTA.md'
-      - OPTEE开发: 'DongshanPi-Seven/09-OPTEE-OS.md'
-  - DongshanPI-哪吒STU:
-    - 主板简介: 'DongshanNezhaSTU/01-BoardIntroduction.md'
-    - 配套资源: 'DongshanNezhaSTU/02-SupportingResources.md'
-    - 快速启动: 'DongshanNezhaSTU/03-QuickStart.md'
-    - 配置开发环境: 'DongshanNezhaSTU/06-ConfigHostEnv.md'
-    - 最小系统快速上手:
-      - 运行helloword应用:  'DongshanNezhaSTU/05-1_RunHelloword.md'
-      - 运行helloword驱动:  'DongshanNezhaSTU/05-2_RunHellowordDriver.md'
-    - Buildroot-SDK系统开发:      
-      - 编译构建最小系统: 'DongshanNezhaSTU/07-Buildroot-SDK_DevelopmentGuide.md'
-      - 编译开发bootloader: 'DongshanNezhaSTU/08-BuildBootloader.md'
-      - 编译开发kernel: 'DongshanNezhaSTU/09-BuildLinuxKernel.md'
-      - 编译开发Rootfs: 'DongshanNezhaSTU/10-BuildRootfs.md'
-      - 支持wifi蓝牙组件: 'DongshanNezhaSTU/10-1_BuildrootSupportWifiBluetooth.md'
-    - Tina-SDK系统开发:      
-      - 编译构建最小系统: 'DongshanNezhaSTU/11-Tina-SDK_DevelopmentGuide.md'
-  - DongshanPI-D1s:
-    - 主板简介: 'DongshanPI-D1s/01-BoardIntroduction.md'        
-  - 柚木PI-蜥蜴:
-    - 主板简介: 'YuzukiHD-Lizard/01-BoardIntroduction.md'      
-  - 柚木PI-变色龙:
-    - 主板简介: 'YuzukiHD-Chameleon/01-BoardIntroduction.md'                  
+      - OPTEE开发: 'DongshanPi-Seven/09-OPTEE-OS.md'               
   - 关于我们:
-     - 简介: 'About.md'   
+     - 简介: 'About.md'
 
 extra_javascript:
   - javascripts/shortcuts.js
