@@ -1,17 +1,18 @@
-# 使用buildroot-SDK编译打包Linux Kernel
-### 单独编译各个部分
+# 使用Tina-SDK编译打包Linux Kernel
+### 编译各个部分
 
-
-
-
-
-* 单独编译 kernel阶段
+* 修改内核配置
 ``` shell
-book@virtual-machine:~/Neza-D1/buildroot-2021$  make linux-rebuild V=1
+book@100ask:~/tina-v853$ croot
+book@100ask:~/tina-v853$ make kernel_menuconfig
 ```
 
-* 单独编译文件系统
-  * 指定完成工具链 系统配置 需要安装的包 以及所需的格式 执行如下命令，最后生成的镜像在 output/image目录下。
+![YuzukiHD-Lizard-09_menuconfig](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-09_menuconfig.png)
+
+可以在上图的界面内修改内核配置。
+
+* 编译打包后会在out/v851s-perf1里面生成最终的镜像
 ``` shell
-book@virtual-machine:~/Neza-D1/buildroot-2021$ make  all //完整编译系统
+book@100ask:~/tina-v853$ make
+book@100ask:~/tina-v853$ pack
 ```

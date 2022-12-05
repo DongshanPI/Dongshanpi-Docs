@@ -1,15 +1,21 @@
 # 使用buildroot-SDK编译构建rootfs
 
-## 单独编译配置busybox
+Tina默认情况是编译打包完成在tina-v853/out/v851s-perf1会生成对应的rootfs.img
 
+## 单独编译配置procd-init
 
+tina默认是procd-init
 
 ``` shell
-book@virtual-machine:~/Neza-D1/buildroot-2021$ make  busybox-menuconfig
+book@100ask:~/tina-v853$ make
+book@100ask:~/tina-v853$ pack
 ```
+
+
 
 ### 清理无效缓存 重新打包
 
 ``` shell
-rm -rf  output/target;    find output/build/ -name .stamp_target_installed | xargs rm ; make
+make clean
 ```
+

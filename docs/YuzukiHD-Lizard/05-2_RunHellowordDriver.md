@@ -2,59 +2,23 @@
 
 ## 配置开发环境
 
-首先我们需要获取 东山哪吒STU 开发板 配套的交叉编译工具链。因为最初的工具链是 阿里平头哥提供，他们的工具链 与 GNU社区标准的工具链存在一定的差异，所以我们暂时不能使用 社区版本。
+首先我们需要获取 柚木PI-蜥蜴 开发板 配套的交叉编译工具链。
 
-由于目前工具链没有提供windows版本，所以只能在 Linux下进行，操作，请先参考上述章节 配置ubuntu 虚拟机章节，进行配置，并配置好。
-
-
-## 获取kernel源码工程
-我们的源码都存放在不同的git仓库内，其中以github为主要托管，也是最新的状态，同时也会使用 gitee作为备用站点，根据大家的实际情况，来进行选择。
-
-* 对于可以访问github的同学 请使用如下命令获取源码
-
-```bash
-git clone https://github.com/DongshanPI/eLinuxCore_dongshannezhastu
-cd  eLinuxCore_dongshannezhastu
-git submodule update  --init --recursive
-```
+由于目前工具链没有提供windows版本，所以只能在 Linux下进行操作，请先参考上述章节 配置ubuntu 虚拟机章节，进行配置，并配置好。
 
 
-* 对于无法访问GitHub的同学 请使用如下命令获取源码。
-
-```bash
-git clone https://gitee.com/weidongshan/eLinuxCore_dongshannezhastu.git
-cd  eLinuxCore_dongshannezhastu
-git submodule update  --init --recursive
-```
 
 
 ## 配置内核编译环境
 ```bash
-export PATH=$PATH:/home/book/eLinuxCore_dongshannezhastu/toolchain/riscv64-glibc-gcc-thead_20200702/bin
-export ARCH=riscv
-export CROSS_COMPILE=riscv64-unknown-linux-gnu-
+export PATH=$PATH:/home/book/tina-v853/prebuilt/gcc/linux-x86/arm/toolchain-sunxi-musl/toolchain/bin
+export ARCH=arm
+export CROSS_COMPILE=arm-openwrt-linux-
 ```
 ```bash
-book@100ask:~/eLinuxCore_dongshannezhastu/linux$ export ARCH=riscv
-book@100ask:~/eLinuxCore_dongshannezhastu/linux$ export CROSS_COMPILE=riscv64-unknown-linux-gnu-
-book@100ask:~/eLinuxCore_dongshannezhastu/linux$ export PATH=$PATH:/home/book/eLinuxCore_dongshannezhastu/toolchain/riscv64-glibc-gcc-thead_20200702/bin
-book@100ask:~/NezhaSTU/eLinuxCore_dongshannezhastu/linux$ make sun20iw1p1_d1_defconfig
-  HOSTCC  scripts/basic/fixdep
-  HOSTCC  scripts/kconfig/conf.o
-  HOSTCC  scripts/kconfig/confdata.o
-  HOSTCC  scripts/kconfig/expr.o
-  LEX     scripts/kconfig/lexer.lex.c
-  YACC    scripts/kconfig/parser.tab.[ch]
-  HOSTCC  scripts/kconfig/lexer.lex.o
-  HOSTCC  scripts/kconfig/parser.tab.o
-  HOSTCC  scripts/kconfig/preprocess.o
-  HOSTCC  scripts/kconfig/symbol.o
-  HOSTLD  scripts/kconfig/conf
-#
-# configuration written to .config
-#
-book@100ask:~/eLinuxCore_dongshannezhastu/linux$ make Image  -j8
-
+book@100ask:~/workspace/V851sTest/hello_drv$ export PATH=$PATH:/home/book/tina-v853/prebuilt/gcc/linux-x86/arm/toolchain-sunxi-musl/toolchain/bin
+book@100ask:~/workspace/V851sTest/hello_drv$ export ARCH=arm
+book@100ask:~/workspace/V851sTest/hello_drv$ export CROSS_COMPILE=arm-openwrt-linux-
 ```
 
 
@@ -238,7 +202,7 @@ Makefile:
 # 注意: 不同的开发板不同的编译器上述3个环境变量不一定相同,
 #       请参考各开发板的高级用户使用手册
 
-KERN_DIR = /home/book/eLinuxCore_dongshannezhastu/linux/
+KERN_DIR = /home/book/tina-v853/lichee/linux-4.9
 
 all:
 	make -C $(KERN_DIR) M=`pwd` modules 
@@ -256,17 +220,16 @@ obj-m	+= hello_drv.o
 ### 编译
 
 ```bash
-book@100ask:~$ make
-make -C /home/book/NezhaSTU/eLinuxCore_dongshannezhastu/linux/ M=`pwd` modules
-make[1]: Entering directory '/home/book/NezhaSTU/eLinuxCore_dongshannezhastu/linux'
-  CC [M]  /home/book/NezhaSTU/hello_drv.o
+book@100ask:~/workspace/V851sTest/hello_drv$ make
+make -C /home/book/tina-v853/lichee/linux-4.9 M=`pwd` modules 
+make[1]: Entering directory '/home/book/tina-v853/lichee/linux-4.9'
+  CC [M]  /home/book/workspace/V851sTest/hello_drv/hello_drv.o
   Building modules, stage 2.
   MODPOST 1 modules
-  CC [M]  /home/book/NezhaSTU/hello_drv.mod.o
-  LD [M]  /home/book/NezhaSTU/hello_drv.ko
-make[1]: Leaving directory '/home/book/NezhaSTU/eLinuxCore_dongshannezhastu/linux'
-riscv64-unknown-linux-gnu-gcc -o hello_drv_test hello_drv_test.c
-book@100ask:~$
+  CC      /home/book/workspace/V851sTest/hello_drv/hello_drv.mod.o
+  LD [M]  /home/book/workspace/V851sTest/hello_drv/hello_drv.ko
+make[1]: Leaving directory '/home/book/tina-v853/lichee/linux-4.9'
+arm-openwrt-linux-gcc -o hello_drv_test hello_drv_test.c 
 ```
 
 
@@ -275,65 +238,86 @@ book@100ask:~$
 
 怎么拷贝文件到开发板上？ 有U盘  ADB 网络 串口等等。
 
-那么我们优先推进使用 网络方式，网络也有很多，有TFTP传输，有nfs传输，有SFTP传输，其中nfs传输需要内核支持 nfs文件系统，SFTP需要根文件系统支持 openssh组件服务，那么最终我们还是选用tftp服务。
+### 使用usb adb方式
 
-### 使用tftp网络服务
+typeC线反接至开发板，点击VMware菜单栏中的虚拟机->可移动设备->Google Tina ADB ->连接（断开与 主机 的连接），使虚拟机连接上柚木PI-蜥蜴 开发板。
 
-1. 首先，需要你的ubuntu系统支持 tftp服务，已经配置并且安装好，然后讲编译出来的 helloword程序 拷贝到 tftp目录下。
+![image-20221205091647473](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-05-1_ADB.png)
 
-```bash
-book@100ask:~$ cp hello_drv_test hello_drv.ko ~/tftpboot/
+之后我们执行如下命令查询虚拟机是否能连接到开发板，如果出现设备号即为连接成功。
+
+```
+book@100ask:~$ adb devices
+List of devices attached
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+20080411	device
 ```
 
-2. 进入到开发板内，首先让开发板可以获取到IP地址，并且可以和 ubuntu系统ping通(这里指的是编译helloword主机)，之后我们在开发板上 获取 helloword 应用程序，并执行。
+此时可以通过下面命令将生成的helloword使用adb传输到开发板的根目录下。
 
-```bash
-# udhcpc
-udhcpc: started, v1.35.0
-[  974.154486] libphy: 4500000.eth: probed
-[  974.159083] sunxi-gmac 4500000.eth eth0: eth0: Type(8) PHY ID 001cc916 at 0 IRQ poll (4500000.eth-0:00)
-udhcpc: broadcasting discover
-udhcpc: broadcasting discover
-[  979.331180] sunxi-gmac 4500000.eth eth0: Link is Up - 1Gbps/Full - flow control off
-[  979.340154] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
-udhcpc: broadcasting discover
-udhcpc: broadcasting select for 192.168.1.47, server 192.168.1.1
-udhcpc: lease of 192.168.1.47 obtained from 192.168.1.1, lease time 86400
-deleting routers
-adding dns 192.168.1.1
-# [  992.315224] random: crng init done
-[  992.319022] random: 2 urandom warning(s) missed due to ratelimiting
-
-# tftp -g -r hello_drv.ko 192.168.1.133
-# tftp -g -r hello_drv_test  192.168.1.133
-# ls
-hello_drv.ko    hello_drv_test  helloword
+```
+book@100ask:~/workspace/V851sTest/hello_drv$ adb push hello_drv.ko /
+hello_drv.ko: 1 file pushed. 1.2 MB/s (5616 bytes in 0.005s)
+book@100ask:~/workspace/V851sTest/hello_drv$ adb push hello_drv_test /
+hello_drv_test: 1 file pushed. 1.7 MB/s (26024 bytes in 0.014s)
 ```
 
-如上所示，我的ubuntu主机IP地址是 192.168.1.133 ，所以使用tftp 从 ubuntu获取helloword 程序，获取速度根据网速而定。
+
+
+### 使用TF卡方式
+
+将文件拷贝到TF卡中，将TF卡插入 柚木PI-蜥蜴 开发板中，正接至开发板中，启动系统后使用如下命令将TF卡挂载至tina系统上。我这里使用的是4G的内存卡，所以为/dev/mmcblk0p1，用户可以根据自己的设备号挂载对应的设备。
+
+```
+root@TinaLinux:/# df -h
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                16.3M     16.3M         0 100% /rom
+devtmpfs                 26.0M         0     26.0M   0% /dev
+tmpfs                    27.2M         0     27.2M   0% /tmp
+/dev/by-name/rootfs_data
+                         43.5M     48.0K     41.2M   0% /overlay
+overlayfs:/overlay       43.5M     48.0K     41.2M   0% /
+tmpfs                    27.2M         0     27.2M   0% /run
+/dev/ubi0_6              29.9M     24.0K     28.3M   0% /mnt/UDISK
+/dev/mmcblk0p1            3.7G    160.0K      3.7G   0% /mnt/extsd
+root@TinaLinux:/# mount /dev/mmcblk0p1 /mnt/
+```
+
+将helloword可执行程序拷贝到根目录下备用。
+
+```
+root@TinaLinux:/# cd /mnt/
+root@TinaLinux:/mnt# cp hello_drv.ko /
+root@TinaLinux:/mnt# cp hello_drv_test /
+```
+
+
 
 ## 运行
 
 ```bash
-# insmod hello_drv.ko
-[ 1007.072991] hello_drv: loading out-of-tree module taints kernel.
-[ 1007.081285] /home/book/NezhaSTU/hello_drv.c hello_init line 70
-# chmod +x hello_drv_test
-# ls /dev/h
-hdmi   hello
-# ls /dev/hello
+root@TinaLinux:~# cd /
+root@TinaLinux:/# ls
+bin             hello_drv_test  proc            run             var
+config          helloworld      pseudo_init     sbin            www
+data            home            ramparser       squashfs
+dev             lib             rdinit          sys
+etc             mnt             rom             tmp
+hello_drv.ko    overlay         root            usr
+root@TinaLinux:/# insmod hello_drv.ko
+[  131.474038] hello_drv: loading out-of-tree module taints kernel.
+[  131.481625] /home/book/workspace/V851sTest/hello_drv/hello_drv.c hello_init line 70
+root@TinaLinux:/# chmod +x hello_drv_test
+root@TinaLinux:/# ls /dev/hello
 /dev/hello
-# ./hello_drv
-hello_drv.ko    hello_drv_test
-# ./hello_drv_test  -w abc
-[ 1060.000621] /home/book/NezhaSTU/hello_drv.c hello_drv_open line 45
-[ 1060.007613] /home/book/NezhaSTU/hello_drv.c hello_drv_write line 38
-[ 1060.015194] /home/book/NezhaSTU/hello_drv.c hello_drv_close line 51
-# ./hello_drv_test  -r
-[ 1062.312864] /home/book/NezhaSTU/hello_drv.c hello_drv_open line 45
-[ 1062.319853] /home/book/NezhaSTU/hello_drv.c hello_drv_read line 30
-APP read : abc[ 1062.327680] /home/book/NezhaSTU/hello_drv.c hello_drv_close line 51
-
-#
+root@TinaLinux:/# ./hello_drv_test  -w abc
+[  172.500652] /home/book/workspace/V851sTest/hello_drv/hello_drv.c hello_drv_open line 45
+[  172.509956] /home/book/workspace/V851sTest/hello_drv/hello_drv.c hello_drv_write line 38
+[  172.519237] /home/book/workspace/V851sTest/hello_drv/hello_drv.c hello_drv_close line 51
+root@TinaLinux:/# ./hello_drv_test  -r
+[  180.906833] /home/book/workspace/V851sTest/hello_drv/hello_drv.c hello_drv_open line 45
+[  180.916024] /home/book/workspace/V851sTest/hello_drv/hello_drv.c hello_drv_read line 30
+APP read : abc[  180.925324] /home/book/workspace/V851sTest/hello_drv/hello_drv.c hello_drv_close line 51
 ```
 

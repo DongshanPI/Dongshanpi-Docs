@@ -204,7 +204,7 @@ nav:
     - 快速启动:
       - 连接开发板: 'YuzukiHD-Lizard/03-QuickStart.md'
       - 更新系统: 'YuzukiHD-Lizard/03-1_FlashSystem.md'
-      - 常见问题: 'YuzukiHD-Lizard/03-SomeQustion.md'    
+      - 常见问题: 'YuzukiHD-Lizard/03-2_SomeQustion.md'    
     - 配置开发环境: 'YuzukiHD-Lizard/06-ConfigHostEnv.md'
     - 最小系统快速上手:
       - 运行helloword应用:  'YuzukiHD-Lizard/05-1_RunHelloword.md'
