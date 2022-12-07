@@ -21,6 +21,8 @@ xradio_mac            221572  1 xradio_core
 
 **断电**后，如下图所示将GC2053的MIPI摄像头连接到开发板上。注意一定需要断电后才能连接，否则会将摄像头烧坏。
 
+![YuzukiHD-Lizard-13-1-camera.png](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-13-1-camera.png)
+
 
 
 ## 使用camerademo测试MIPI摄像头驱动
