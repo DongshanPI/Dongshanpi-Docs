@@ -1,4 +1,27 @@
 # 更新系统固件
+## 支持的系统镜像
+
+### SPI NAND系统
+-----
+* [v851s_linux_lizard_uart0_2022_12_13.zip](https://gitee.com/GloomyGhost/Yuzukilizard/blob/master/Software/IMG/v851s_linux_lizard_uart0_2022_12_13.zip)
+  * 移植 OpenCV Python
+  * 支持 Numpy
+  * 增加 NPU 运行时
+  * 增加 YOLOv3 测试工具
+  * 增加 RPROC 启动参数
+-----
+* [v851s_linux_lizard_uart0_2022_12_12.zip](https://gitee.com/GloomyGhost/Yuzukilizard/blob/master/Software/IMG/ v851s_linux_lizard_uart0_2022_12_12.zip)
+
+  * 移植 Python 3.9，ffmpeg，OpenCV
+  * 支持 Wi-Fi
+-----
+* [v851s_linux_lizard_uart0_2022_12_04.zip](https://gitee.com/GloomyGhost/Yuzukilizard/blob/master/Software/IMG/v851s_linux_lizard_uart0_2022_12_04.zip)
+
+  * 测试了基础功能，初步移植
+
+  * 支持 Linux 启动
+
+
 ## 烧写固件至SPI NAND
 
 ### 准备工作
@@ -8,6 +31,8 @@
 3. TypeC线 X1
 4. 下载SPI NAND最小系统镜像：https://gitlab.com/dongshanpi/tools/-/raw/main/v851s_linux_lizard_uart0.7z
 5. 下载全志USB烧录驱动：https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnerUSBFlashDeviceDriver.zip
+
+
 
 ### 连接开发板
 
