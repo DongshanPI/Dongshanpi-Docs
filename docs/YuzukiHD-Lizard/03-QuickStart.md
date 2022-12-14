@@ -8,13 +8,13 @@
 
 typeC正面图：
 
-![YuzukiHD-Lizard-03-typeC_serial](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-03-typeC_serial.png)
+![YuzukiHD-Lizard-03-typeC_serial](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-03-typeC_serial.png){ width="600" }
 
 
 
 typeC反面图：
 
-![YuzukiHD-Lizard-03-tpyeC_OTG](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-03-tpyeC_OTG.png)
+![YuzukiHD-Lizard-03-tpyeC_OTG](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-03-tpyeC_OTG.png){ width="600" }
 
 ### 1. 连接串口线
 将配套的TypeC线一段**正接**至开发板的串口/供电接口，另一端连接至电脑USB接口，连接成功后板载的电源灯会闪烁。
@@ -54,6 +54,7 @@ typeC反面图：
 
 ### 3. 进入系统shell
 使用串口工具成功打开串口后，可以直接按下 Enter 键 进入shell，当然您也可以按下板子上的 `Reset`复位键，来查看完整的系统信息。
+
 ![YuzukiHD-Lizard-03-bootlogs_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-03-bootlogs_001.png)
 
 **系统默认没有用户名没有密码，可直接进入系统**

@@ -6,14 +6,13 @@
 1. 柚木PI-蜥蜴开发板主板 x1
 2. 下载全志线刷工具AllwinnertechPhoeniSuit： https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnertechPhoeniSuit.zip
 3. TypeC线 X1
-4. 下载SPI NAND最小系统镜像：
+4. 下载SPI NAND最小系统镜像：https://gitlab.com/dongshanpi/tools/-/raw/main/v851s_linux_lizard_uart0.7z
 5. 下载全志USB烧录驱动：https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnerUSBFlashDeviceDriver.zip
 
 ### 连接开发板
 
 参考下图所示，将TypeC线**反接**至 开发板 OTG烧写接口，另一端 连接至 电脑USB接口，连接成功后，可以将下载好的 烧写工具和 SPI NAND最小系统镜像解压缩 使用。
-
-
+![YuzukiHD-Lizard-03-tpyeC_OTG](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-03-tpyeC_OTG.png)
 
 ### 安装usb驱动
 
