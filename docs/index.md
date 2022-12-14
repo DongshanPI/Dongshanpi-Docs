@@ -11,9 +11,13 @@
 
   | 板子名称        | 页面地址   |
   | :-----------   | :------- |
-  | 東山Pi壹号  | [点击跳转](DongshanPi-One/01-BoardIntroduction/) |
-  | 東山Pi柒号  | [点击跳转](DongshanPi-Seven/01-BoardIntroduction/) |
-  | 東山哪吒STU  | [点击跳转](DongshanNezhaSTU/01-BoardIntroduction/) |
+  | DongshanPI-D1s | [点击跳转](DongshanPI-D1s/01-BoardIntroduction/)|
+  | DongshanPI-Nezha(Allwinner D1-H)  | [点击跳转](DongshanNezhaSTU/01-BoardIntroduction/) | 
+  | 柚木PI-蜥蜴(Allwinner V851s)|[点击跳转](YuzukiHD-Lizard/01-BoardIntroduction/)|
+  | 柚木PI-变色龙(Allwinner H616)|[点击跳转](YuzukiHD-Chameleon/01-BoardIntroduction/)|
+  | DonshanPI-One(Sigmastar SSD202D)  | [点击跳转](DongshanPi-One/01-BoardIntroduction/) |
+  | DongshanPI-Seven(ST mp157dac)  | [点击跳转](DongshanPi-Seven/01-BoardIntroduction/) |
+  
 
 ## 配套的交流社区
 * 东山PI壹号QQ技术交流群：684518734
