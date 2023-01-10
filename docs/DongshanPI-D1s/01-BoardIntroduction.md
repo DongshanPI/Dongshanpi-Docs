@@ -4,6 +4,5 @@
 
 ## 硬件简述
 
-![](http://photos.100ask.net/dongshanpi/d1s/DongshanPI-D1s-V2TopFuction.png)
-
+![DongshanPI-D1s-V2TopFuction](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/DongshanPI-D1s-V2TopFuction.png)
 
