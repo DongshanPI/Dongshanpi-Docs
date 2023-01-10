@@ -1,9 +1,6 @@
 # 快速开始使用
 
-* 参考操作演示视频教程
-<iframe width="800" height="600"
-  src="//player.bilibili.com/player.html?aid=677495111&bvid=BV1Rm4y1X7GZ&cid=462849541&page=1">
-</iframe>
+
 ## 上电启动系统
 
 **注意：如果你买的配置是没有SPI NANDFLASH配置，则请参考下方的烧写固件至TF卡章节，先烧录系统，才可以启动使用。**
