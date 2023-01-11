@@ -2,24 +2,26 @@
 
 ## 烧写固件至SPINor
 ### 准备工作
-* 硬件
-  * DongshanPI-D1s主板 x1
-  * USB  TypeC线 X2
-* 软件
-  * 全志线刷工具：[AllwinnertechPhoeniSuit](https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnertechPhoeniSuit.zip)
-  * SPI Nor系统镜像：[tina_d1-h-nezha_uart0](https://gitlab.com/dongshanpi/tools/-/raw/main/tina_d1-h-nezha_uart0.zip)
-  * 全志USB烧录驱动：[AllwinnerUSBFlashDeviceDriver](https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnerUSBFlashDeviceDriver.zip)
+* 硬件：DongshanPI-D1s主板 x1
+* 硬件：TypeC线 X2
+* 软件：全志线刷工具：[AllwinnertechPhoeniSuit](https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnertechPhoeniSuit.zip)
+* 软件：SPI Nor系统镜像：[tina_d1-h-nezha_uart0](https://gitlab.com/dongshanpi/tools/-/raw/main/tina_d1-h-nezha_uart0.zip)
+* 软件：全志USB烧录驱动：[AllwinnerUSBFlashDeviceDriver](https://gitlab.com/dongshanpi/tools/-/raw/main/AllwinnerUSBFlashDeviceDriver.zip)
 
 ### 连接开发板
-参考下图所示，将两个TypeC线分别连至 开发板 串口接口 与 OTG烧写接口，另一端 连接至 电脑USB接口，连接成功后，可以将下载好的 烧写工具和 SPI NAND最小系统镜像解压缩 使用。
+参考下图所示，
+
+将两个TypeC线分别连至DongshanPI-D1s开发板 `黑色仔细序号 3.OTG烧录接口 ` `黑色字体序号 4.调试&串口接口`  Typec线另一端 连接至 电脑USB接口，连接成功后，
+
+可以先获取软件 `全志线刷工具` `SPI Nor系统镜像`  `全志USB烧录驱动`安装包 进行解压缩操作。
 
 ![DongshanPI-D1s-V2TopFuction](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/DongshanPI-D1s-V2TopFuction.png)
 
 
 ### 安装usb驱动
-在我们连接好开发板以后，先按住 **FEL** 烧写模式按键，之后按一下 **RESET** 系统复位键，就可以自动进入烧写模式。
+在我们连接好开发板以后，先按住 DongshanPI-D1s开发板 `黑色序号为 2.烧录模式按键` 也称为**FEL** 烧写模式按键，之后按一下 `黑色序号为 5.系统复位按键`也称 **RESET** 复位键，就可以自动进入烧写模式。
 
-这时我们可以看到设备管理器  **通用串行总线控制器** 弹出一个  未知设备 ，这个时候我们就需要把我们提前下载好的 **全志USB烧录驱动** 进行修改，然后将解压缩过的 **全志USB烧录驱动**  压缩包，解压缩，可以看到里面有这么几个文件。
+这时我们可以看到电脑设备管理器  **通用串行总线控制器** 部分弹出一个  未知设备 ，这个时候我们就需要把我们提前下载好的 **全志USB烧录驱动** 进行修改，然后将解压缩过的 **全志USB烧录驱动**  压缩包，解压缩，可以看到里面有这么几个文件。
 
 ```bash
 InstallUSBDrv.exe
@@ -64,7 +66,7 @@ install.bat
 
 
 ### 运行软件烧写
-将下载下来的全志线刷工具 **AllwinnertechPhoeniSuit** 解压缩，同时将**SPI NAND最小系统镜像**下载下来也进行解压缩。
+将下载下来的全志线刷工具 **AllwinnertechPhoeniSuit** 解压缩，同时将**SPI Nor系统镜像**下载下来也进行解压缩。
 
 解压后，得到一个 **tina_d1-h-nezha_uart0.img** 镜像，是用于烧录到SPI NAND镜像得。另一个是**AllwinnertechPhoeniSuit**文件夹。
 
@@ -126,11 +128,11 @@ install.bat
 完成以后，就可以弹出TF卡，并将其插到 东山哪吒STU 最小板背面的TF卡槽位置处，此时连接 串口线 并使用 串口工具打开串口设备，按下开发板的 **RESET**复位按键就可以重启进入TF卡系统内了。
 
 ### 启动系统
-![sdcard-flashsystem_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/sdcard-flashsystem_001.png)
+![Dongshanpi-d1s_pe2pe3uart_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/Dongshanpi-d1s_pe2pe3uart_001.png)
 
-**系统的登录用户名 root 密码为空**
 
-**系统的登录用户名 root 密码为空**
 
-**系统的登录用户名 root 密码为空**
+**系统默认会自己登录 没有用户名 没有密码。**
+**系统默认会自己登录 没有用户名 没有密码。**
+**系统默认会自己登录 没有用户名 没有密码。**
 

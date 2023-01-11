@@ -1,13 +1,38 @@
 # 快速开始使用
 
 **注意：开发板板载了 SPINORFLASH 发货前都会把Tina-Linux 系统提前烧录至 SPINor内，对于使用TF卡启动的同学 请单独看后续章节 `更新系统` 单独烧录系统至TF卡并启动。**
+
+因开发板板载了CKLINK，且TF卡引脚和CKLINK冲突导致无法同时使用，需要通过拨码开关 `SW1` 来切换启动功能，由于我们的裸机/RTOS课程会用到CKLINK进行调试和输出功能，硬件默认把 PF2 PF4作为了UART0，但是当您使用DongshanPI-D1s运行Linux系统时，Linux系统默认的UART0为PE2 PE3 这时需要参考下图通过2.54mm规格的杜邦线连接右侧J2 排针的 PE2 PE3 GND 连接至 开发板 `黑色序号 5.调试与UART功能 `旁边的 **RX TX GND** 三个圆孔内，需要直接用公头杜邦线穿过圆孔。
+![Dongshanpi-d1s_pe2pe3uart_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/Dongshanpi-d1s_pe2pe3uart_002.png)
+
+如果你不想使用杜邦线这种方式，可以优先使用下面的 **使用ADB登录系统** 方式进行登录系统
+
 ## windows下使用 ADB登录系统
 ### 连接OTG线
 
 ### 安装windows板ADB
+点击链接下载Windows版ADB工具 [adb-tools](https://gitlab.com/dongshanpi/tools/-/raw/main/ADB.7z)
+下载完成后解压，可以看到如下目录，
+
+![adb-tools-dir](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-dir.png)
+
+然后 我们单独 拷贝 上一层的 **platform-tools** 文件夹到任意 目录，拷贝完成后，记住这个 目录位置，我们接下来要把这个 路径添加至 Windows系统环境变量里。
+
+![adb-tools-dir](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-dir-001.png)
+
+我这里是把它单独拷贝到了 D盘，我的目录是 `D:\platform-tools` 接下来 我需要把它单独添加到Windows系统环境变量里面才可以在任意位置使用adb命令。
+
+![adb-tools-windows_config_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_001.png)
+
+添加到 Windows系统环境变量里面
+![adb-tools-windows_config_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_002.png)
 
 ### 打开cmd连接开发板
+按下减排 wind + r 输入 cmd命令打开终端，
+输入 adb shell 
+即可直接登录开发板系统
 
+**注意： 此方法目前只适用于 使用全志Tina-SDK 构建出来的系统。**
 
 
 ## 使用串口登录系统
