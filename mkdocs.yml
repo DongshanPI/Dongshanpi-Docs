@@ -186,7 +186,7 @@ nav:
     - 快速启动:
       - 连接开发板: 'DongshanPI-D1s/03-QuickStart.md'
       - 更新系统: 'DongshanPI-D1s/03-1_FlashSystem.md'
-      - 常见问题: 'DongshanPI-D1s/03-SomeQustion.md'    
+      - 常见问题: 'DongshanPI-D1s/03-2_SomeQustion.md'    
     - 配置开发环境: 'DongshanPI-D1s/06-ConfigHostEnv.md'
     - 最小系统快速上手:
       - 运行helloword应用:  'DongshanPI-D1s/05-1_RunHelloword.md'
