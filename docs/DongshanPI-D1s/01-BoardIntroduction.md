@@ -6,7 +6,7 @@
 D1s 是全志针对智能解码市场推出的高性价比 AIoT 芯片。它使用 64bit RISC-V 架构的阿里平头哥 C906 处理器，内置了64M DDR2，支持 Linux 系统，同时集成了大量自研的音视频编解码相关 IP，可以支持 H.265,、H.264、MPEG-1/2/4、JPEG 等全格式视频解码，支持ADC、DAC、I2S、PCM、DMIC、OWA 等多种音频接口，可以广泛应用于智能家居面板、智能商显、工业控制、车载等产品。
 #### 芯片框图
 
-![D1s芯片框图](https://d1s.docs.aw-ol.com/assets/img/index/D1sSoC.png)
+![D1s芯片框图](https://d1s.docs.aw-ol.com/assets/img/index/D1sSoC.png){ width="600" }
 
 
 ####  参数规格
@@ -83,7 +83,7 @@ eLQFP128, 14 mm x 14 mm
 
 ### 1.2 外围器件介绍
 
-![DongshanPI-D1s-V2TopFuction](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/DongshanPI-D1s-V2TopFuction.png)
+![DongshanPI-D1s-V2TopFuction](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/DongshanPI-D1s-V2TopFuction.png){ width="600" }
 
 * 开发板原理图 [DongshanPI-D1s_SCH-V2.pdf](/DongshanPI-D1s/DongshanPI-D1s_SCH-V2.pdf)
 

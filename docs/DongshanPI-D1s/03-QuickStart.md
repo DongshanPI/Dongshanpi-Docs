@@ -4,7 +4,7 @@
 
 因开发板板载了CKLINK，且TF卡引脚和CKLINK冲突导致无法同时使用，需要通过拨码开关 `SW1` 来切换启动功能，由于我们的裸机/RTOS课程会用到CKLINK进行调试和输出功能，硬件默认把 PF2 PF4作为了UART0，但是当您使用DongshanPI-D1s运行Linux系统时，Linux系统默认的UART0为PE2 PE3 这时需要参考下图通过2.54mm规格的杜邦线连接右侧J2 排针的 PE2 PE3 GND 连接至 开发板 `黑色序号 5.调试与UART功能 `旁边的 **RX TX GND** 三个圆孔内，需要直接用公头杜邦线穿过圆孔。
 
-![Dongshanpi-d1s_pe2pe3uart_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/Dongshanpi-d1s_pe2pe3uart_002.png)
+![Dongshanpi-d1s_pe2pe3uart_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/Dongshanpi-d1s_pe2pe3uart_002.png){ width="600" }
 
 如果你不想使用杜邦线这种方式，可以优先使用下面的 **使用ADB登录系统** 方式进行登录系统
 
@@ -21,7 +21,7 @@
 
 然后 我们单独 拷贝 上一层的 **platform-tools** 文件夹到任意 目录，拷贝完成后，记住这个 目录位置，我们接下来要把这个 路径添加至 Windows系统环境变量里。
 
-![adb-tools-dir](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-dir-001.png)
+![adb-tools-dir](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-dir-001.png){ width="600" }
 
 我这里是把它单独拷贝到了 D盘，我的目录是 `D:\platform-tools` 接下来 我需要把它单独添加到Windows系统环境变量里面才可以在任意位置使用adb命令。
 
@@ -34,12 +34,15 @@
 打开CMD Windows 命令提示符方式有两种<br>
 方式1：直接在Windows10/11搜索对话框中输入  cmd 在弹出的软件中点击  `命令提示符`<br>
 方式2：同时按下 wind + r 键，输入 cmd 命令，按下确认 就可以自动打开 `命令提示符`<br>
-![adb-tools-windows_config_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_003.png)
+
+![adb-tools-windows_config_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_003.png){ width="600" }
 
 打开命令提示符，输出 adb命令可以直接看到我们的adb已经配置成功<br>
-![adb-tools-windows_config_004](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_004.png)
+
+![adb-tools-windows_config_004](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_004.png){ width="600" }
 
 连接好开发板的 OTG 并将其连接至电脑上，然后 输入 adb shell就可以自动登录系统<br>
+
 ``` shell
 
 C:\System> adb shell
