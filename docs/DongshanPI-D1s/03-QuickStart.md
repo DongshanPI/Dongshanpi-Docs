@@ -36,7 +36,7 @@
 ![adb-tools-windows_config_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_003.png)
 
 打开命令提示符，输出 adb命令可以直接看到我们的adb已经配置成功<br>
-![adb-tools-windows_config_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_003.png)
+![adb-tools-windows_config_004](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/adb-tools-windows_config_004.png)
 
 连接好开发板的 OTG 并将其连接至电脑上，然后 输入 adb shell就可以自动登录系统<br>
 ``` shell
@@ -103,7 +103,6 @@ C:\System> adb pull /mnt/UDISK/badapple.mp4   # 将 /mnt/UDISK/badapple.mp4 下�
 
 ### 3. 进入系统shell
 使用串口工具成功打开串口后，可以直接按下 Enter 键 进入shell，当然您也可以按下板子上的 `Reset`复位键，来查看完整的系统信息。
-![bootlogs_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/bootlogs_001.png)
 
 **系统默认会自己登录 没有用户名 没有密码。**
 **系统默认会自己登录 没有用户名 没有密码。**

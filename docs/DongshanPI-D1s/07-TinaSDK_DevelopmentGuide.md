@@ -1,30 +1,33 @@
-# 使用buildroot-SDK编译构建系统
+# 使用Tina-SDK编译构建系统
 
 ## 简介
 
-* 此套构建系统基于全志RISCV-64 Linux D1-H  芯片，适配了buildroot 2022lts主线版本，兼容了百问网的项目课程以及相关组件，真正做到了低耦合，高可用，使用不同的buildroot external tree规格，讲不同的项目 不同的组件分别管理，来实现更容易上手 也更容易学习理解。
-
 ## 获取sdk源码
 
-* 默认源码都存放在github仓库内，请使用如下命令获取
+开始之前我们需要先获取 提前准备好 tina-sdk压缩包，压缩包分为国内国外两个存放位置，如下所示，大小大概9G，下载完成后，拷贝到提前配置好Host开发环境的ubuntu系统内，然后参考 下载的目录内的README.txt文档 进行解压缩。
 
+获取Tina-sdk V2.0源码 百度网盘获取地址 链接：https://pan.baidu.com/s/13uKlqDXImmMl9cgKc41tZg?pwd=qcw7 提取码：qcw7 压缩包路径在 Tina-SDK_DevelopLearningKits-V1/DongshanNezhaSTU-TinaV2.0-SDK
+拷贝进Ubuntu系统内，并进行解压缩,解压命令在README里面
+
+
+解压缩命令
 
 ```bash
-book@virtual-machine:~$ git clone  https://github.com/DongshanPI/buildroot_dongshannezhastu
-book@virtual-machine:~$ cd buildroot_dshannezhastu
-book@virtual-machine:~/buildroot_dongshannezhastu$ git submodule update --init --recursive
-book@virtual-machine:~/buildroot_dongshannezhastu$ git submodule update --recursive --remote
+cat tina-d1-h.tar.gz*| tar zx
+```
+解压完成后，可以看到多出来一个 tina-d1-h的文件夹
+
+```bash
+book@100ask:~/tina-d1-h$ ls  
+build  config  Config.in  device  dl  lichee  Makefile  out  package  prebuilt  README.md  rules.mk  scripts  target  TinaAddons  tmp  toolchain  tools
+
 ```
 
-
-
-*  对于国内无法访问github的同学，可以使用国内备用gitee站点， 如下命令。
+由于默认的sdk并未支持此开发板，所以我们需要支持此开发板的配置 单独拷贝增加到DongshanPI-D1s sdk内，首先clone此开发板补丁仓库，然后单独覆盖。
 
 ```bash
-book@virtual-machine:~$ git clone  https://gitee.com/weidognshan/buildroot_dongshannezhastu
-book@virtual-machine:~$ cd buildroot_dshannezhastu
-book@virtual-machine:~/buildroot_dongshannezhastu$ git submodule update --init --recursive
-book@virtual-machine:~/buildroot_dongshannezhastu$ git submodule update --recursive --remote
+book@100ask:~$ git clone  https://gitee.com/weidongshan/DongshanPI-D1s_TinaSDK.git
+book@100ask:~$ cp -rfvd  DongshanPI-D1s_TinaSDK/* tina-d1-h/
 ```
 
 ## 安装必要依赖包
@@ -79,18 +82,48 @@ book@ubuntu1804:~/tina-d1-h$
 
 ```
 
-### 烧写spinor最小系统镜像
+### 烧写SPINor最小系统镜像
 
-编译完成后会在 output/images目录下输出 d1-h-nezhastu_uart0.img 文件，将文件拷贝到Windows系统下使用 使用 全志官方的  AllwinnertechPhoeniSuit 进行烧写。
-详细烧写步骤请，请参考左侧 [快速启动](https://dongshanpi.com/DongshanNezhaSTU/03-QuickStart/#spi-nand) 页面。
-
-### 编译tf card最小系统镜像
-
-编译完成后会在 output/images目录下输出 dongshannezhastu-sdcard.img 文件，将文件拷贝到Windows系统下使用 wind32diskimage烧写，或者使用dd if 烧录到tf卡内，
-之后插到开发板上，即可启动。 请参考左侧 [快速启动](https://dongshanpi.com/DongshanNezhaSTU/03-QuickStart/#tf) 页面
-
-### 烧写tf卡系统最小镜像
+编译完成后会在 out/d1s-nezha_nor/目录下输出 tina_d1s-nezha_nor_uart0_nor.img 文件，将文件拷贝到Windows系统下使用 使用 全志官方的  AllwinnertechPhoeniSuit 进行烧写。
+详细烧写步骤请，请参考左侧 [更新系统](https://dongshanpi.com/DongshanPI-D1s/03-1_FlashSystem/#spinor) 页面。
 
 
+### 编译TFCard最小系统镜像
+``` bash
+book@ubuntu1804:~/tina-d1-h$ source build/envsetup.sh 
+Setup env done! Please run lunch next.
+book@ubuntu1804:~/tina-d1-h$ lunch 
 
+You're building on Linux
 
+Lunch menu... pick a combo:
+     1. d1-h_nezha_min-tina
+     2. d1-h_nezha-tina
+     3. d1s_nezha_nand-tina
+     4. d1s_nezha_nor-tina
+     5. d1s_nezha_sd-tina
+     6. d1s_nezha-tina
+
+Which would you like? [Default d1s_nezha]: 5
+============================================
+TINA_BUILD_TOP=/home/book/tina-d1-h
+TINA_TARGET_ARCH=riscv
+TARGET_PRODUCT=d1s_nezha_sd
+TARGET_PLATFORM=d1s
+TARGET_BOARD=d1s-nezha_sd
+TARGET_PLAN=nezha_sd
+TARGET_BUILD_VARIANT=tina
+TARGET_BUILD_TYPE=release
+TARGET_KERNEL_VERSION=5.4
+TARGET_UBOOT=u-boot-2018
+TARGET_CHIP=sun20iw1p1
+============================================
+clean buildserver
+[1] 3278
+book@ubuntu1804:~/tina-d1-h$ 
+
+```
+
+### 烧写TF Card最小系统镜像
+
+编译完成后会在 out/d1s-nezha_sd/目录下输出 tina_d1s-nezha_sd_uart0.img 文件，将文件拷贝到Windows系统下使用 PhoenixCard烧写，烧写成功之后插到开发板上，设置好拨码开关即可启动。 请参考左侧  [更新系统](https://dongshanpi.com/DongshanPI-D1s/03-1_FlashSystem/#tf) 页面。
