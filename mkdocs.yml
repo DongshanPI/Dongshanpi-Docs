@@ -184,7 +184,7 @@ nav:
     - 主板简介: 'DongshanPI-D1s/01-BoardIntroduction.md'          
     - 配套资源: 'DongshanPI-D1s/02-SupportingResources.md'
     - 快速启动:
-      - 连接开发板: 'DongshanPI-D1s/03-QuickStart.md'
+      - 登录开发板: 'DongshanPI-D1s/03-QuickStart.md'
       - 更新系统: 'DongshanPI-D1s/03-1_FlashSystem.md'
       - 常见问题: 'DongshanPI-D1s/03-2_SomeQustion.md'    
     - 配置开发环境: 'DongshanPI-D1s/06-ConfigHostEnv.md'
