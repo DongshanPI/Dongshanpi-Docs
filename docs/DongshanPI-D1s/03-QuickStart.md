@@ -3,6 +3,7 @@
 **注意：开发板板载了 SPI-NorFLASH 发货前都会把Tina-Linux 系统提前烧录至 SPINor内，对于使用TF卡启动的同学 请单独看后续章节 `更新系统` 单独烧录系统至TF卡并启动。**
 
 因开发板板载了CKLINK，且TF卡引脚和CKLINK冲突导致无法同时使用，需要通过拨码开关 `SW1` 来切换启动功能，由于我们的裸机/RTOS课程会用到CKLINK进行调试和输出功能，硬件默认把 PF2 PF4作为了UART0，但是当您使用DongshanPI-D1s运行Linux系统时，Linux系统默认的UART0为PE2 PE3 这时需要参考下图通过2.54mm规格的杜邦线连接右侧J2 排针的 PE2 PE3 GND 连接至 开发板 `黑色序号 5.调试与UART功能 `旁边的 **RX TX GND** 三个圆孔内，需要直接用公头杜邦线穿过圆孔。
+
 ![Dongshanpi-d1s_pe2pe3uart_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/Dongshanpi-d1s_pe2pe3uart_002.png)
 
 如果你不想使用杜邦线这种方式，可以优先使用下面的 **使用ADB登录系统** 方式进行登录系统
