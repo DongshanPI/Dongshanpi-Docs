@@ -274,6 +274,9 @@ nav:
       - 支持的其它系统: 'DongshanPi-One/11-SupportOtherSystem.md'
   - DongshanPI-PicoW:
     - 主板简介: 'DongshanPi-PicoW/01-BoardIntroduction.md'
+    - 配套资源: 'DongshanPi-PicoW/02-SupportingResources.md'
+    - 快速启动:
+      - 登录开发板: 'DongshanPi-PicoW/03-QuickStart.md'
   - DongshanPI-柒号:
     - 主板简介: 'DongshanPi-Seven/01-BoardIntroduction.md'
     - 配套资源: 'DongshanPi-Seven/02-SupportingResources.md' 
