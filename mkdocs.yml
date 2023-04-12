@@ -278,6 +278,9 @@ nav:
     - 快速启动:
       - 登录开发板: 'DongshanPi-PicoW/03-QuickStart.md'
       - 更新系统: 'DongshanPi-PicoW/03-1_FlashSystem.md'
+    - 开发环境搭建:
+      - Ubuntu环境搭建: 'DongshanPi-PicoW/06-ConfigHostEnv.md'
+      - IKAYAKI-SDK使用: 'DongshanPi-PicoW/07-IKAYAKISDK_DevelopmentGuide.md'
   - DongshanPI-柒号:
     - 主板简介: 'DongshanPi-Seven/01-BoardIntroduction.md'
     - 配套资源: 'DongshanPi-Seven/02-SupportingResources.md' 
