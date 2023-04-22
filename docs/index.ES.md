@@ -17,7 +17,7 @@ En primer lugar, debe tener claro el nombre de su placa de desarrollo, y selecci
   | YuzukiPI-Chameleon(Allwinner H616)|[Haz clic para ir](YuzukiHD-Chameleon/01-BoardIntroduction/)|
   | DonshanPI-One(Sigmastar SSD202D)  | [Haz clic para ir](DongshanPi-One/01-BoardIntroduction/) |
   | DongshanPI-Seven(ST mp157dac)  | [Haz clic para ir](DongshanPi-Seven/01-BoardIntroduction/) |
-  | DongshanPI-PicoW(Sigmastar SSD210)  | [Haz clic para ir](DongshanPi-PicoW/01-BoardIntroduction.ES.md) |
+  | DongshanPI-PicoW(Sigmastar SSD210)  | [Haz clic para ir](DongshanPi-PicoW/01-BoardIntroduction/) |
   
 
 ## Comunidad de discusión relacionada
