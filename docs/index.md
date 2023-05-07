@@ -1,4 +1,4 @@
-[ [中文](index.md) | [English](index.EN.md) ]
+[ [中文](index.md) | [English](index.EN.md) ] | [Español](index.ES.md) ]
 # 东山Pi简述(Introduction)
 
 ## 什么是东山Pi系列开发板？
