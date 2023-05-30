@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/01-BoardIntroduction/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/01-BoardIntroduction.ES) ]
+
 * El precio de la placa de desarrollo se acerca al costo de producción y solo se proporcionan materiales y documentos de desarrollo de SDK originales de la fábrica, ¡sin ningún soporte técnico adicional!
 * Cualquier problema con esta placa de desarrollo se puede discutir y compartir en nuestro foro en https://forums.100ask.net/c/10-category/picow
 

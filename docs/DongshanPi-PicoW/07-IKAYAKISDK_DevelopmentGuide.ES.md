@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/07-IKAYAKISDK_DevelopmentGuide/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/07-IKAYAKISDK_DevelopmentGuide.ES/) ]
+
 # Compilación del sistema utilizando IKAYAKI-SDK
 
 ## 1. Introducción a la arquitectura de IKAYAKI-SDK

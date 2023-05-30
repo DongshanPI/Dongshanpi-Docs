@@ -1,3 +1,4 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/03-QuickStart/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/03-QuickStart.ES/) ]
 # 快速开始使用
 
 ## 连接串口模块

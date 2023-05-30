@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/07-IKAYAKISDK_DevelopmentGuide/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/07-IKAYAKISDK_DevelopmentGuide.ES/) ]
+
 # 使用IKAYAKI-SDK编译构建系统
 
 ## 1. IKAYAKI-SDK架构简介

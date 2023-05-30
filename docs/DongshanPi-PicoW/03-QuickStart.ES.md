@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/03-QuickStart/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/03-QuickStart.ES/) ]
+
 # Guía de inicio rápido
 
 ## Conexión del módulo de serie

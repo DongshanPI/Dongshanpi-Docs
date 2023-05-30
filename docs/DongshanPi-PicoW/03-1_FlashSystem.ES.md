@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/03-1_FlashSystem/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/03-1_FlashSystem.ES/) ]
+
 # Actualización de la imagen del sistema
 
 ## Grabación mediante USB

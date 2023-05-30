@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/03-1_FlashSystem/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/03-1_FlashSystem.ES/) ]
+
 # 更新系统镜像
 
 ## 使用USB烧录

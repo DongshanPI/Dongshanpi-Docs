@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/06-ConfigHostEnv/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/06-ConfigHostEnv.ES/) ]
+
 # 安装并配置开发环境
 
 

@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/01-BoardIntroduction/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/01-BoardIntroduction.ES) ]
+
 * 开发板价格已经贴近生产价，只提供 原厂SDK的开发资料和文档，没有任何额外技术支持！
 * 此开发板的任何问题都可以在我们的论坛交流讨论 https://forums.100ask.net/c/10-category/picow
 # DongshanPI-PicoW开发板介绍

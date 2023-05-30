@@ -1,3 +1,4 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/02-SupportingResources/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/02-SupportingResources.ES/) ]
 
 # 配套资源
 

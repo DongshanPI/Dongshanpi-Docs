@@ -1,3 +1,5 @@
+[ [中文](https://dongshanpi.com/DongshanPi-PicoW/06-ConfigHostEnv/) | [[Español]](https://dongshanpi.com/DongshanPi-PicoW/06-ConfigHostEnv.ES/) ]
+
 ## Instalación y configuración del entorno de desarrollo
 
 ### Obtener el sistema de la máquina virtual
