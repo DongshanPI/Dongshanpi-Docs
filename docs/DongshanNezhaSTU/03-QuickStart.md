@@ -15,14 +15,14 @@
 * 对于Windows系统
 此时Windows设备管理器 在 端口(COM和LPT) 处会多出一个串口设备，一般是以 `USB-Enhanced-SERIAL CH9102`开头，您需要留意一下后面的具体COM编号，用于后续连接使用。
 
-![QuickStart-01](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-01.png)
+![QuickStart-01](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-01.png)
 
 如上图，COM号是96，我们接下来连接所使用的串口号就是96。
 
 * 对于Linux系统
 可以查看是否多出一个/dev/tty<> 设备,一般情况设备节点为 /dev/ttyACM0  。
 
-![QuickStart-02](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-02.png)
+![QuickStart-02](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-02.png)
 
 ### 2. 打开串口控制台
 #### 获取串口工具
@@ -33,20 +33,20 @@
 
 #### 使用putty登录串口
 
-![QuickStart-04](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-04.png)
+![QuickStart-04](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-04.png)
 
 #### 使用Mobaxterm登录串口
 打开MobaXterm，点击左上角的“Session”，在弹出的界面选中“Serial”，如下图所示选择端口号（前面设备管理器显示的端口号COM21）、波特率（Speed 115200）、流控（Flow Control: none）,最后点击“OK”即可。步骤如下图所示。
 **注意：流控（Flow Control）一定要选择none，否则你将无法在MobaXterm中向串口输入数据**
 
-![Mobaxterm_serial_set_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Mobaxterm_serial_set_001.png)
+![Mobaxterm_serial_set_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Mobaxterm_serial_set_001.png)
 
 
 
 
 ### 3. 进入系统shell
 使用串口工具成功打开串口后，可以直接按下 Enter 键 进入shell，当然您也可以按下板子上的 `Reset`复位键，来查看完整的系统信息。
-![bootlogs_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/bootlogs_001.png)
+![bootlogs_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/bootlogs_001.png)
 
 **系统默认的 登录 用户名 是 root 没有密码。**
 
@@ -74,7 +74,7 @@
 参考下图所示，将两个TypeC线分别连至 开发板 串口接口 与 OTG烧写接口，另一端 连接至 电脑USB接口，连接成功后，可以将下载好的 烧写工具和 SPI NAND最小系统镜像解压缩 使用。
 
 
-![DongshanNezhaSTU-SPI-NAND_FLASH_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-SPI-NAND_FLASH_001.jpg)
+![DongshanNezhaSTU-SPI-NAND_FLASH_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/DongshanNezhaSTU-SPI-NAND_FLASH_001.jpg)
 
 
 
@@ -98,28 +98,28 @@ install.bat
 对于wind10/wind11系统的同学，需要在设备管理器里面进行手动安装驱动。
 
 如下图所示，在第一次插入OTG设备，进入烧写模式设备管理器会弹出一个未知设备。
-![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_001.png)
+![Windows_FlashDevice_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Windows_FlashDevice_001.png)
 
 接下来鼠标右键点击这个未知设备，在弹出的对话框里， 点击浏览我计算机以查找驱动程序软件。
-![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_002.png)
+![Windows_FlashDevice_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Windows_FlashDevice_002.png)
 
 之后在弹出新的对话框里，点击浏览找到我们之前下载好的 usb烧录驱动文件夹内，找到 `UsbDriver/` 这个目录，并进入，之后点击确定即可。
-![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_007.png)
+![Windows_FlashDevice_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Windows_FlashDevice_007.png)
 
 注意进入到  `UsbDriver/`  文件夹，然后点击确定，如下图所示。
 
-![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_003.png)
+![Windows_FlashDevice_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Windows_FlashDevice_003.png)
 
 此时，我们继续点击 **下一页** 按钮，这时系统就会提示安装一个驱动程序。 
 在弹出的对话框里，我们点击 始终安装此驱动程序软件 等待安装完成。
-![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_004.png)
+![Windows_FlashDevice_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Windows_FlashDevice_004.png)
 
 安装完成后，会提示，Windows已成功更新你的驱动程序。
-![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_005.png)
+![Windows_FlashDevice_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Windows_FlashDevice_005.png)
 
 
 最后我们可以看到，设备管理器 里面的未知设备 变成了一个 `USB Device(VID_1f3a_efe8)`的设备，这时就表明设备驱动已经安装成功。
-![Windows_FlashDevice_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Windows_FlashDevice_006.png)
+![Windows_FlashDevice_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Windows_FlashDevice_006.png)
 
 
 ### 运行软件烧写
@@ -132,26 +132,26 @@ install.bat
 
 打开软件后 软件主界面如下图所示
 
-![PhoenixSuit_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/PhoenixSuit_001.png)
+![PhoenixSuit_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/PhoenixSuit_001.png)
 
 
 ​	接下来 我们需要切换到 **一键刷机**窗口，如下图所示，点击红框标号1，在弹出的新窗口内，我们点击 红框2 **浏览** 找到我们刚才解压过的 SPI NAND 最小系统镜像  **tina_d1-h-nezha_uart0.img** ，选中镜像后，点击红框3 **全盘擦除升级** ，最后点击红框4  **立即升级**。
 
 ​	点击完成后，不需要理会 弹出的信息，这时 我们拿起已经连接好的开发板，先按住 **FEL** 烧写模式按键，之后按一下 **RESET** 系统复位键，就可以自动进入烧写模式并开始烧写。
 
-![PhoenixSuit_002](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/PhoenixSuit_002.png)
+![PhoenixSuit_002](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/PhoenixSuit_002.png)
 
 
 ​	烧写时会提示烧写进度条，烧写完成后 开发板会自己重启。
 
-![PhoenixSuit_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/PhoenixSuit_003.png)
+![PhoenixSuit_003](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/PhoenixSuit_003.png)
 
 
 ### 启动系统
 
 一般情况下，烧写成功后 都会自动重启 启动系统，此时我们进入到 串口终端，可以看到它的启动信息，等所有启动信息加载完成，输入 root 用户名即可登录烧写好的系统内。
 
-![spinand-flashsystem_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/spinand-flashsystem_001.png)
+![spinand-flashsystem_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/spinand-flashsystem_001.png)
 
 
 ## 烧写固件至TF卡
@@ -173,17 +173,17 @@ install.bat
 
 * 使用SD CatFormat格式化TF卡，注意备份卡内数据。参考下图所示，点击刷新找到TF卡，然后点击 Format 在弹出的 对话框 点击 **是(Yes)**等待格式完成即可。
 
-![SDCardFormat_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/SDCardFormat_001.png)
+![SDCardFormat_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/SDCardFormat_001.png)
 
 * 格式化完成后，使用**Win32diskimage**工具来烧录镜像，参考下属步骤，找到自己的TF卡盘符，然后点击2 箭头 文件夹的符号 找到 刚才解压的 TF卡镜像文件  **dongshannezhastu-sdcard.img** 最后 点击 写入，等待写入完成即可。
 
-![wind32diskimage_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/wind32diskimage_001.png)
+![wind32diskimage_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/wind32diskimage_001.png)
 
 
 完成以后，就可以弹出TF卡，并将其插到 东山哪吒STU 最小板背面的TF卡槽位置处，此时连接 串口线 并使用 串口工具打开串口设备，按下开发板的 **RESET**复位按键就可以重启进入TF卡系统内了。
 
 ### 启动系统
-![sdcard-flashsystem_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/sdcard-flashsystem_001.png)
+![sdcard-flashsystem_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/sdcard-flashsystem_001.png)
 
 **系统的登录用户名 root 密码为空**
 

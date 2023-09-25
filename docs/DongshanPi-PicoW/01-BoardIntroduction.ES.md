@@ -33,7 +33,7 @@ La placa de desarrollo DongshanPI-PicoW utiliza la combinación de tecnología d
 Diagrama de la apariencia de la placa de desarrollo
  
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-TOP.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-TOP.png)
 
 
 
@@ -47,7 +47,7 @@ Diagrama de la apariencia de la placa de desarrollo
 Como se muestra en la figura siguiente, suelde la placa principal a la placa de adaptador correspondiente de los pines y suéldela a la placa inferior. Esta placa inferior se puede conectar a una placa perforada y se puede desarrollar a través de 7 líneas + cabeza micro usb + herramienta de conversión usb a serie.
 
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-FlashUsb.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-FlashUsb.png)
 
 
 

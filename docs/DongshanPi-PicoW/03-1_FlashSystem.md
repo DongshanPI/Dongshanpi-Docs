@@ -21,7 +21,7 @@ DongshanPI-PicoW属于最小开发板，可以直接使用 5V电压输入 即可
 
 
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-TOPUSBLine.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-TOPUSBLine.png)
 
 
 
@@ -35,7 +35,7 @@ DongshanPI-PicoW属于最小开发板，可以直接使用 5V电压输入 即可
 
 **注意： 一定要确保开发板与Micro模块 VBUS  GND与开发板的P31 P34 连接无误，才能通电，否则 会导致硬件与电脑短路损坏，此问题我们不予处理。**
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-FlashUsb.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-FlashUsb.png)
 
 
 

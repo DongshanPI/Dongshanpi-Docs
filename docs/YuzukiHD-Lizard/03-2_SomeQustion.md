@@ -58,7 +58,7 @@ ERROR: update_mbr failed
 book@100ask:~/tina-v853$ vim device/config/chips/v851s/configs/lizard/linux-4.9/sys_partition.fex
 ```
 
-![YuzukiHD-Lizard-03-2-Question-1](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-03-2-Question-1.png)
+![YuzukiHD-Lizard-03-2-Question-1](https://photos.100ask.net/dongshanpi-docs/YuzukiHD-Lizard/YuzukiHD-Lizard-03-2-Question-1.png)
 
 
 

@@ -7,7 +7,7 @@ book@100ask:~/tina-v853$ croot
 book@100ask:~/tina-v853$ make kernel_menuconfig
 ```
 
-![YuzukiHD-Lizard-09_menuconfig](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-09_menuconfig.png)
+![YuzukiHD-Lizard-09_menuconfig](https://photos.100ask.net/dongshanpi-docs/YuzukiHD-Lizard/YuzukiHD-Lizard-09_menuconfig.png)
 
 可以在上图的界面内修改内核配置。
 

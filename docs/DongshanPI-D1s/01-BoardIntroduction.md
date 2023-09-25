@@ -83,7 +83,7 @@ eLQFP128, 14 mm x 14 mm
 
 ### 1.2 外围器件介绍
 
-![DongshanPI-D1s-V2TopFuction](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/d1s/DongshanPI-D1s-V2TopFuction.png){ width="600" }
+![DongshanPI-D1s-V2TopFuction](https://photos.100ask.net/dongshanpi-docs/d1s/DongshanPI-D1s-V2TopFuction.png){ width="600" }
 
 * 开发板原理图 [DongshanPI-D1s_SCH-V2.pdf](/DongshanPI-D1s/DongshanPI-D1s_SCH-V2.pdf)
 

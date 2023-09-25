@@ -21,7 +21,7 @@
  * 背面：TF卡接口，可用于调试与连接TF卡启动系统。
  * 背面：256MB  SPI NAND FLASH 芯片。
 
-![DongshanNezhaSTU-TOP_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-TOP_001.png)
+![DongshanNezhaSTU-TOP_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/DongshanNezhaSTU-TOP_001.png)
 
 
 ### DIY全针脚底板
@@ -30,7 +30,7 @@
 
 下图是 **最小主板** 与 **DIY全针脚底板** 连接示意图。
 
-![DongshanNezhaSTU-DIY_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-DIY_003.jpg)
+![DongshanNezhaSTU-DIY_003](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/DongshanNezhaSTU-DIY_003.jpg)
 
 ### 全功能项目底板
 
@@ -48,4 +48,4 @@
 * PCI-E接口：支持4G模块连接，可以进行PPPOE通信，开发板独立上网。
 * 排针：将多余IO全部引出，用于扩展传感器模块等，电源兼容树莓派 接口。
 
-![DongshanNezhaSTU-FullProject-Board_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/DongshanNezhaSTU-FullProject-Board_001.png)
+![DongshanNezhaSTU-FullProject-Board_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/DongshanNezhaSTU-FullProject-Board_001.png)

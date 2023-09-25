@@ -15,11 +15,11 @@ Una vez que se ha verificado la conexión, conectar el DongshanPI-PicoW al puert
 
 **Nota: Asegúrese de que la conexión de los pines `5V` y `GND` del módulo USB-Serial con los pines `P31` y `P46` de la placa esté correcta antes de encenderla, de lo contrario podría dañar la placa y no nos haremos responsables del problema.**
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-TOPUSBLine.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-TOPUSBLine.png)
 
 A continuación se muestra un ejemplo de diagrama de conexión entre un DongshanPI-PicoW y un módulo USB-Serial. ¡Asegúrese de verificar los cables y las conexiones del módulo USB-Serial!
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-UartBoot.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-UartBoot.png)
 
 
 ## 2. Acceso al sistema a través de un puerto serie
@@ -32,14 +32,14 @@ En la mayoría de los casos, el sistema instalará automáticamente el controlad
 * Para el sistema Windows
 En la sección Puertos (COM y LPT) del Administrador de dispositivos de Windows, se agregará un dispositivo de puerto serie, que generalmente comienza con `USB-Enhanced-SERIAL CH9102`. Preste atención al número de COM específico detrás de él para usarlo en la conexión posterior.
 
-![QuickStart-01](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-01.png)
+![QuickStart-01](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-01.png)
 
 En la imagen de arriba, el número de COM es 96, que es el número de puerto serie que usaremos a continuación.
 
 * Para el sistema Linux
 Puede verificar si se agrega un dispositivo `/dev/tty<>`, y en la mayoría de los casos el dispositivo se encuentra en `/dev/ttyACM0`.
 
-![QuickStart-02](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-02.png)
+![QuickStart-02](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-02.png)
 
 
 ### 2. Abrir la consola serie
@@ -51,13 +51,13 @@ Utilice una herramienta serie como Putty o MobaXterm para conectarse al disposit
 
 #### Iniciar sesión en la consola serie con Putty
 
-![QuickStart-04](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-04.png)
+![QuickStart-04](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-04.png)
 
 #### Iniciar sesión en la consola serie con Mobaxterm
 Abra MobaXterm, haga clic en "Session" en la esquina superior izquierda, seleccione "Serial" en la ventana emergente y luego seleccione el número de puerto (el número de puerto COM21 que se muestra en el administrador de dispositivos), la velocidad de bits (115200), el control de flujo (Flow Control: none). Por último, haga clic en "OK". Los pasos se muestran en la siguiente figura.
 **Nota: Debe seleccionar none como control de flujo (Flow Control), de lo contrario no podrá ingresar datos al puerto serie en MobaXterm.**
 
-![Mobaxterm_serial_set_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Mobaxterm_serial_set_001.png)
+![Mobaxterm_serial_set_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Mobaxterm_serial_set_001.png)
 
 ### 3. Ingresar al shell del sistema
 Después de abrir el puerto serie con éxito utilizando la herramienta de puerto serie, puede presionar la tecla Enter para ingresar al shell. También puede presionar el botón "Reset" en la placa para ver la información completa del sistema.

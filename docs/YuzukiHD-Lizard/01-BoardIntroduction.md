@@ -16,7 +16,7 @@
 * Wireless: 支持2.4GHz WIFI无线网络协议，以及标准蓝牙及低功耗蓝牙协议。
 * Other:  GPIO支持2路IIC，一路SPI，一路uart，三路PWM
 
-![YuzukiHD-Lizard-sketch_map_v851s](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-sketch_map_v851s.png){ width="800" }
+![YuzukiHD-Lizard-sketch_map_v851s](https://photos.100ask.net/dongshanpi-docs/YuzukiHD-Lizard/YuzukiHD-Lizard-sketch_map_v851s.png){ width="800" }
 
 V851S拥有全新一代高性能的ISP图像处理模块及视频编码器，具备较高的编码质量、较低的编码码率和行业主流水准的图像处理能力。同时，该芯片内部集成了64MBDDR2存储器，拥有完备的应用所需外设接口，包括USB，SDIO和Ethernet等，可适用于多种网络摄像机产品。
 
@@ -24,10 +24,10 @@ V851S拥有全新一代高性能的ISP图像处理模块及视频编码器，具
 
 ### 芯片架构框图
 
-![YuzukiHD-Lizard-Chip_block_diagram](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-Chip_block_diagram.png){ width="600"}
+![YuzukiHD-Lizard-Chip_block_diagram](https://photos.100ask.net/dongshanpi-docs/YuzukiHD-Lizard/YuzukiHD-Lizard-Chip_block_diagram.png){ width="600"}
 
 ### 芯片应用框图
-![YuzukiHD-Lizard-Application_scenario](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-Application_scenario.png){ width="600" }
+![YuzukiHD-Lizard-Application_scenario](https://photos.100ask.net/dongshanpi-docs/YuzukiHD-Lizard/YuzukiHD-Lizard-Application_scenario.png){ width="600" }
 
 ## 支持的扩展模块
 ### MIPI摄像头

@@ -44,7 +44,7 @@ wlan0     Link encap:Ethernet  HWaddr 08:F9:56:88:5C:46
 
 2.开发板如下图所示接入天线
 
-![YuzukiHD-Lizard-12-1-wifi](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-12-1-wifi.png)
+![YuzukiHD-Lizard-12-1-wifi](https://photos.100ask.net/dongshanpi-docs/YuzukiHD-Lizard/YuzukiHD-Lizard-12-1-wifi.png)
 
 3.扫描WiFi
 

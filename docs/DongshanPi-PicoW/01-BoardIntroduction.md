@@ -31,7 +31,7 @@ DongshanPI-PicoW 开发板使用 星宸科技 SSD210 + SSW101B usb WiFi组成，
 
 开发板外观示意图 
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-TOP.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-TOP.png)
 
 
 
@@ -44,7 +44,7 @@ DongshanPI-PicoW 开发板使用 星宸科技 SSD210 + SSW101B usb WiFi组成，
 
 如下图所示，将核心板  与 转接板 Pin脚对应，焊接至底板上，此底板可以连接至洞洞板上，通过如下方式，就可以实现7根线 加 micro usb头 + usb转串口工具实现开发。
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-FlashUsb.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-FlashUsb.png)
 
 
 

@@ -63,7 +63,7 @@ book@100ask:~/DongshanPiOne-TAKOYAKI/boot$  cp u-boot_spinand.xz.img.bin  ../pro
 * 社区版烧写工具 连线介绍 https://item.taobao.com/item.htm?id=665728385852
 * 将烧写工具连接好烧录线后，将烧录器和开发板烧写接口连接好，拨码开关切换为烧写模式(拨码开发白色拨码切换到非NO方向)。
 
-![Mstar-I2C-Flash-tools](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-ONE/Mstar-I2C-Flash-tools.png)<br>
+![Mstar-I2C-Flash-tools](https://photos.100ask.net/dongshanpi-docs/DongshanPI-ONE/Mstar-I2C-Flash-tools.png)<br>
 
 之后我们按下 主板上`Reset`键，同时执行如下烧写命令，其中第一句话`sudo SNANDer -p mstarddc -c /dev/i2c-0:49 -e`是整个 擦除 flash 命令，建议执行。
 

@@ -8,7 +8,7 @@
 
 Abre el navegador y visita el sitio web https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html. Haz clic en "DESCARGAR AHORA" como se muestra en la imagen a continuación, para descargar e instalar la versión de Windows de VMware Workstation.
 
-![vmwareworkstation_download_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/vmwareworkstation_download_001.png)
+![vmwareworkstation_download_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/vmwareworkstation_download_001.png)
 
 Una vez que se complete la descarga, simplemente sigue los pasos de la instalación usando la configuración predeterminada.
 
@@ -16,7 +16,7 @@ Una vez que se complete la descarga, simplemente sigue los pasos de la instalaci
 
 Visita https://www.linuxvmimages.com/images/ubuntu-1804/ usando el navegador y haz clic en "VMware Image" como se muestra en la imagen a continuación.
 
-![linuxvmimage_downlaod_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/linuxvmimage_downlaod_001.png)
+![linuxvmimage_downlaod_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/linuxvmimage_downlaod_001.png)
 
 La descarga puede tardar entre 10 y 30 minutos, dependiendo de la velocidad de la conexión a Internet.
 
@@ -24,13 +24,13 @@ La descarga puede tardar entre 10 y 30 minutos, dependiendo de la velocidad de l
 
 1. Descomprime el archivo comprimido de la imagen del sistema de la máquina virtual. Después de la descompresión, verás dos archivos. Usaremos el archivo de configuración con la extensión ".vmx".
 
-![ConfigHost_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_003.png)
+![ConfigHost_003](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_003.png)
 
 2. Abre el software VMware Workstation instalado y haz clic en "Archivo" en la esquina superior izquierda y luego en "Abrir". Busca el archivo "Ubuntu_18.04.6_VM_LinuxVMImages.COM.vmx" y se abrirá una nueva ventana de diálogo de la máquina virtual.
 
 3. La imagen de abajo es la interfaz de configuración de la máquina virtual. Haz clic en el recuadro rojo 2 para editar la configuración de la máquina virtual y ajusta el tamaño de la memoria y el número de procesadores. Se recomienda tener al menos 4GB de memoria y 4 procesadores. Una vez que hayas terminado de ajustar la configuración, haz clic en "Ejecutar esta máquina virtual" para ejecutarla.
 
-![ConfigHost_005](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_005.png)
+![ConfigHost_005](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_005.png)
 
 La primera vez que abras la máquina virtual, aparecerá un cuadro de diálogo que pregunta si quieres copiar la máquina virtual. Haz clic en "He copiado" para continuar iniciando el sistema de la máquina virtual.
 
@@ -62,7 +62,7 @@ Si encuentra que su máquina virtual de Ubuntu no puede copiar y pegar comandos 
 sudo apt install open-vm-tools-desktop 
 ```
 
-![ConfigHost_007](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_007.png)
+![ConfigHost_007](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_007.png)
 
 Después de la instalación, haga clic en el botón de energía en la esquina superior derecha para reiniciar el sistema Ubuntu o ingrese el comando sudo reboot para reiniciar directamente.
 

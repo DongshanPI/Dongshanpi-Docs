@@ -242,7 +242,7 @@ arm-openwrt-linux-gcc -o hello_drv_test hello_drv_test.c
 
 typeC线反接至开发板，点击VMware菜单栏中的虚拟机->可移动设备->Google Tina ADB ->连接（断开与 主机 的连接），使虚拟机连接上柚木PI-蜥蜴 开发板。
 
-![image-20221205091647473](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/YuzukiHD-Lizard/YuzukiHD-Lizard-05-1_ADB.png)
+![image-20221205091647473](https://photos.100ask.net/dongshanpi-docs/YuzukiHD-Lizard/YuzukiHD-Lizard-05-1_ADB.png)
 
 之后我们执行如下命令查询虚拟机是否能连接到开发板，如果出现设备号即为连接成功。
 

@@ -36,7 +36,7 @@
 ### 3. 进入系统shell
 使用串口工具成功打开串口后，可以直接输入 `root`用户名按下 Enter 键就可以直接登录系统了，当然您也可以按下板子上的 `Reset`复位键，来查看完整的系统信息。
 
-![DongshanPi-Seven_FlashDefaultSystem-008](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-Seven/DongshanPi-Seven_FlashDefaultSystem-010.png)
+![DongshanPi-Seven_FlashDefaultSystem-008](https://photos.100ask.net/dongshanpi-docs/DongshanPI-Seven/DongshanPi-Seven_FlashDefaultSystem-010.png)
 
 ## 扩展硬件
 

@@ -7,7 +7,7 @@
 
 使用浏览器打开网址    https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html   参考下图箭头所示，点击下载安装 Windows版本的VMware Workstation ，点击 **DOWNLOAD NOW**  即可开始下载。
 
-![vmwareworkstation_download_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/vmwareworkstation_download_001.png)
+![vmwareworkstation_download_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/vmwareworkstation_download_001.png)
 
 下载完成后全部使用默认配置一步步安装即可。
 
@@ -17,7 +17,7 @@
 
 * 使用浏览器打开  https://www.linuxvmimages.com/images/ubuntu-1804/     找到如下箭头所示位置，点击 **VMware Image** 下载。
 
-![linuxvmimage_downlaod_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/linuxvmimage_downlaod_001.png)
+![linuxvmimage_downlaod_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/linuxvmimage_downlaod_001.png)
 
 下载过程可能会持续 10 到 30 分钟，具体要依据网速而定。
 
@@ -27,19 +27,19 @@
 
 1. 解压缩 虚拟机系统镜像压缩包，解压缩完成后，可以看到里面有如下两个文件，接下来，我们会使用 后缀名为 .vmx 这个 配置文件。
 
-![ConfigHost_003](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_003.png)
+![ConfigHost_003](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_003.png)
 
 2.  打开已经安装好的 vmware workstation 软件 点击左上角的 **文件** --> **打开** 找到上面的 Ubuntu_18.04.6_VM_LinuxVMImages.COM.vmx  文件，之后会弹出新的虚拟机对话框页面。
 
-![ConfigHost_004](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_004.png)
+![ConfigHost_004](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_004.png)
 
 3. 如下图所示为  为我们已经虚拟机的配置界面，那面我们可以 点击 红框 2 编辑虚拟机设置 里面 去调正 我们虚拟机的 内存 大小 和处理器个数，建议 最好 内存为 4GB 及以上，处理器至少4 个。 调整好以后，就可以 点击 **开启此虚拟机** 来运行此虚拟机了
 
-![ConfigHost_005](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_005.png)
+![ConfigHost_005](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_005.png)
 
 第一次打开会提示  一个 虚拟机已经复制的 对话框，我们这时，只需要 点击  我已复制虚拟机  就可以继续启动虚拟机系统了。
 
-![ConfigHost_006](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_006.png)
+![ConfigHost_006](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_006.png)
 
 等待数秒，系统就会自动启动了，启动以后 鼠标点击   **Ubuntu**  字样，就可以进入登录对话框，输入  密码 ubuntu 即可登录进入ubuntu系统内。
 
@@ -71,12 +71,12 @@ sudo apt-get install -y  sed make binutils build-essential  gcc g++ bash patch g
 sudo apt install open-vm-tools-desktop 
 ```
 
-![ConfigHost_007](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_007.png)
+![ConfigHost_007](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_007.png)
 
 安装完成后，点击右上角的 电源按钮，重启ubuntu系统，或者 直接输入 sudo reboot 命令进行重启。
 
 这时就可以 通过windows端向ubuntu内粘贴文件，或者拷贝拷出文件了。
 
-![ConfigHost_008](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/ConfigHost_008.png)
+![ConfigHost_008](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/ConfigHost_008.png)
 
 做完这一步以后，就可以继续往下，获取源码 开始RISC-V 东山哪吒STU开发板的开发之旅了。

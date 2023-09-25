@@ -7,11 +7,11 @@ DongshanPI-PicoW属于最小开发板，可以直接使用 5V电压输入 即可
 
 **注意： 一定要确保串口模块 5V GND与开发板的P31 P46 连接无误，才能通电，否则 会导致硬件损坏，我们不予处理。**
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-TOPUSBLine.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-TOPUSBLine.png)
 
 **如下使用了一个USB转串口模块和板子的连接示意图，可以用来参考,一定要注意线序和usb转串口模块对上！**
 
-![](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanPI-PicoW/DongshanPI-PicoW-UartBoot.png)
+![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-UartBoot.png)
 
 
 
@@ -24,14 +24,14 @@ DongshanPI-PicoW属于最小开发板，可以直接使用 5V电压输入 即可
 * 对于Windows系统
 此时Windows设备管理器 在 端口(COM和LPT) 处会多出一个串口设备，一般是以 `USB-Enhanced-SERIAL CH9102`开头，您需要留意一下后面的具体COM编号，用于后续连接使用。
 
-![QuickStart-01](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-01.png)
+![QuickStart-01](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-01.png)
 
 如上图，COM号是96，我们接下来连接所使用的串口号就是96。
 
 * 对于Linux系统
 可以查看是否多出一个/dev/tty<> 设备,一般情况设备节点为 /dev/ttyACM0  。
 
-![QuickStart-02](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-02.png)
+![QuickStart-02](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-02.png)
 
 ### 2. 打开串口控制台
 #### 获取串口工具
@@ -42,13 +42,13 @@ DongshanPI-PicoW属于最小开发板，可以直接使用 5V电压输入 即可
 
 #### 使用putty登录串口
 
-![QuickStart-04](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/QuickStart-04.png)
+![QuickStart-04](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/QuickStart-04.png)
 
 #### 使用Mobaxterm登录串口
 打开MobaXterm，点击左上角的“Session”，在弹出的界面选中“Serial”，如下图所示选择端口号（前面设备管理器显示的端口号COM21）、波特率（Speed 115200）、流控（Flow Control: none）,最后点击“OK”即可。步骤如下图所示。
 **注意：流控（Flow Control）一定要选择none，否则你将无法在MobaXterm中向串口输入数据**
 
-![Mobaxterm_serial_set_001](https://cdn.staticaly.com/gh/DongshanPI/Docs-Photos@master/DongshanNezhaSTU/Mobaxterm_serial_set_001.png)
+![Mobaxterm_serial_set_001](https://photos.100ask.net/dongshanpi-docs/DongshanNezhaSTU/Mobaxterm_serial_set_001.png)
 
 
 ### 3. 进入系统shell
