@@ -33,7 +33,7 @@
     * M4 Core Debug 接口。
 
 ## 硬件资料
-* 原理图文件：https://cowtransfer.com/s/33c3b1ca51934e
+* 原理图文件：https://dongshanpi.cowtransfer.com/s/f6985560931543 点击链接查看 [ DongshanPI-SEVEN ] 
 
 ## 扩展引脚定义
 
