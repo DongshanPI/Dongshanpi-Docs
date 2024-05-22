@@ -1,25 +1,9 @@
 # 更新系统固件
 ## 支持的系统镜像
-
-### SPI NAND系统
------
-* [v851s_linux_lizard_uart0_2022_12_13.zip](https://gitee.com/GloomyGhost/Yuzukilizard/blob/master/Software/IMG/v851s_linux_lizard_uart0_2022_12_13.zip)
-  * 移植 OpenCV Python
-  * 支持 Numpy
-  * 增加 NPU 运行时
-  * 增加 YOLOv3 测试工具
-  * 增加 RPROC 启动参数
------
-* [v851s_linux_lizard_uart0_2022_12_12.zip](https://gitee.com/GloomyGhost/Yuzukilizard/blob/master/Software/IMG/ v851s_linux_lizard_uart0_2022_12_12.zip)
-
-  * 移植 Python 3.9，ffmpeg，OpenCV
-  * 支持 Wi-Fi
------
-* [v851s_linux_lizard_uart0_2022_12_04.zip](https://gitee.com/GloomyGhost/Yuzukilizard/blob/master/Software/IMG/v851s_linux_lizard_uart0_2022_12_04.zip)
-
-  * 测试了基础功能，初步移植
-
-  * 支持 Linux 启动
+- 访问镜像发布站点获取： https://github.com/YuzukiHD/Yuzukilizard/releases
+- https://github.com/YuzukiHD/Yuzukilizard/releases/tag/1.0.2
+- https://github.com/YuzukiHD/Yuzukilizard/releases/tag/1.0.0
+- https://github.com/YuzukiHD/Yuzukilizard/releases/tag/1.0.1
 
 
 ## 烧写固件至SPI NAND
