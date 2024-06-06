@@ -30,13 +30,13 @@
   * usbHost:  TypeC接口的USB HOST 支持连接支持USB协议的设备。
   * 扩展接口： 使用MINI-PCI-E接口 用于连接底板。
 
-* 东山Pi壹号 开发板原理图文件：https://cowtransfer.com/s/9b745ce262544c
+* 东山Pi壹号 开发板原理图文件：https://forums.100ask.net/t/topic/6615
 
 ## 开发资源描述
 ### 配套CPU开发手册
 
 各位同学 期待已久的东山PI壹号 (SSD202D)部分常用外设CPU开发手册已经公开出来了，里面包含寄存器地址及描述哦，大家快来下载阅读。<br>
-获取连接：：https://cowtransfer.com/s/0756a2af637745 里面包含<br>
+获取连接：：https://forums.100ask.net/t/topic/6615 里面包含<br>
 
 * SSD202D_CHIPTOP_百问网.pdf
 * SSD202D_CLKGEN_百问网.pdf
