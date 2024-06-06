@@ -30,7 +30,7 @@
 ## 配套的扩展硬件
 
 ### 专门底板
-* 底板原理图文件  https://cowtransfer.com/s/98e72afb505045
+* 底板原理图文件  https://forums.100ask.net/t/topic/6615
 * 完全公开版本底板文件
 
 ### 专门模块
