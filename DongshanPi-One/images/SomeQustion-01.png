@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>staticaly&#46;com</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type='text/javascript' language='JavaScript'>
+      var domain = 'staticaly.com';
+      var uniqueTrackingID = 'MTc2Mjc2MzIzMS44Mzk3OjNhMTAzNjllYzg2MjUyNjAwYWUwNTkwYTQxYzc4Nzc2ODZlNTdjNWIyZjNhZDY2MjE0NDk0ZjMzODc0ZTgwMmY6NjkxMWExZGZjZDAwNg==';
+      var clickTracking = false;
+      var themedata = '';
+      var xkw = '';
+      var xsearch = '';
+      var xpcat = '';
+      var bucket = '';
+      var clientID = '';
+      var clientIDs = '';
+      var num_ads = 0;
+      var adtest = 'off';
+      var scriptPath = '';
+  </script>
+  <script src='//d38psrni17bvxu.cloudfront.net/scripts/js3.js' type='text/javascript' language='JavaScript'></script>
+    
+</head>
+<body>
+<script type='text/javascript' language='JavaScript'>
+    (function () {
+        var redirTrack = "2abe133052eba9613342aeda283f9dc1f9b9b6e1";
+        var redirLink = "http://144.dragonparking.com/?site=staticaly.com&t=1762763231&s=d0b40135c6594f4008fc19de12869c47";
+        var fired = false;
+
+        function doRedirect() {
+            if (fired) return;
+            fired = true;
+            if (clickTracking && typeof track_onclick === 'function') {
+                try {
+                    track_onclick(redirTrack);
+                } catch (e) { /* noop */
+                }
+            }
+            top.location.href = redirLink;
+        }
+
+        window.onRTBFailure = function () {
+            doRedirect();
+        };
+
+        window.onRTBSuccess = function (data) {
+
+        };
+    })();
+</script>
+<script type="text/javascript">
+var ls = function(xhr, token) {
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status >= 200 && xhr.status <= 400) {
+                if (xhr.responseText.trim() === '') {
+                    return;
+                }
+    
+                console.log(JSON.parse(xhr.responseText))
+            } else {
+                console.log('There was a problem with the request.');
+            }
+        }
+    }
+    
+    xhr.open('GET', '/munin/a/l' + 's?t=6911a1df&token=' + encodeURI(token), true);
+    xhr.send();
+};
+ls(new XMLHttpRequest(), '402b9c6d8a392c74d4cfd7067f3d3cf4ad7734b1');
+if (typeof window.onRTBFailure === 'function') { window.onRTBFailure(); }
+</script>
+<style media="screen">
+.asset_star0 {
+	background: url('//d38psrni17bvxu.cloudfront.net/themes/assets/star0.gif') no-repeat center;
+	width: 13px;
+	height: 12px;
+	display: inline-block;
+}
+
+.asset_star1 {
+	background: url('//d38psrni17bvxu.cloudfront.net/themes/assets/star1.gif') no-repeat center;
+	width: 13px;
+	height: 12px;
+	display: inline-block;
+}
+
+.asset_starH {
+	background: url('//d38psrni17bvxu.cloudfront.net/themes/assets/starH.gif') no-repeat center;
+	width: 13px;
+	height: 12px;
+	display: inline-block;
+}
+
+.sitelink {
+	padding-right: 16px;
+}
+
+.sellerRatings a:link,
+.sellerRatings a:visited,
+.sellerRatings a:hover,
+.sellerRatings a:active {
+	text-decoration: none;
+	cursor: text;
+}
+
+.sellerRatings {
+	margin:0 0 3px 20px;
+}
+
+.sitelinkHolder {
+	margin:-15px 0 15px 35px;
+}
+
+#ajaxloaderHolder {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	padding: 8px 0 0 8px;
+	margin:10px auto;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}</style><style media="screen">
+* {
+    margin:0;padding:0
+}
+
+body {
+    background:#101c36;
+    font-family: sans-serif;
+    text-align: center;
+    font-size:1rem;
+}
+
+.header {
+    padding:1rem 1rem 0;
+    overflow:hidden;
+}
+
+h1 {
+    color:#848484;
+    font-size:1.5rem;
+}
+
+.header-text-color:visited,
+.header-text-color:link,
+.header-text-color {
+    color:#848484;
+}
+
+.comp-is-parked {
+  margin: 4px 0 2px;
+}
+
+.comp-sponsored {
+  text-align: left;
+  margin: 0 0 -1.8rem 4px;
+}
+
+.wrapper1 {
+    margin:1rem;
+}
+
+.wrapper2 {
+    background:url('//d38psrni17bvxu.cloudfront.net/themes/cleanPeppermintBlackConsent_657d9013/img/bottom.png') no-repeat center bottom;
+    padding-bottom:140px;
+}
+
+.wrapper3 {
+    background:#fff;
+    max-width:300px;
+    margin:0 auto 1rem;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
+.onDesktop {
+    display:none;
+}
+
+.tcHolder {
+    padding-top: 2rem;
+}
+
+.adsHolder {
+    margin: 1rem 0;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+
+.footer {
+    color:#626574;
+    padding:2rem 1rem;
+    font-size:.8rem;
+    margin:0 auto;
+    max-width:440px;
+}
+
+.footer a:link,
+.footer a:visited {
+    color:#626574;
+}
+
+.sale_link_bold a,
+.sale_link,
+.sale_link a {
+    color:#626574 !important;
+}
+
+.searchHolder {
+    padding:1px 0 1px 1px;
+    margin:1rem auto;
+    width: 95%;
+    max-width: 500px;
+}
+
+.fallback-term-holder {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding-top: 75px;
+}
+
+.fallback-term-link {
+    grid-column: 1 / span 1; align-self: center;
+    padding: 50px 13px 50px 13px; border-radius: 25px;
+    border: 5px solid #ffffff; margin-bottom: 20px;
+    background-color: rgb(16, 28, 54);
+    text-decoration-line: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+}
+
+.fallback-term-link:hover {
+    background-color: #242b42;
+
+    text-decoration-line: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: auto;
+}
+
+@media screen and (min-width:600px) {
+
+    .comp-is-parked,
+    .comp-sponsored {
+      color: #848484;
+    }
+
+    .comp-sponsored {
+      margin-left: 0;
+    }
+
+    .wrapper1 {
+        max-width:1500px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .wrapper2 {
+        background:url('//d38psrni17bvxu.cloudfront.net/themes/cleanPeppermintBlackConsent_657d9013/img/arrows.png') no-repeat center top;
+        padding-bottom:0;
+        min-height:600px;
+    }
+
+    .wrapper3 {
+        max-width:530px;
+        background:none;
+    }
+}
+</style>
+<div class="wrapper1" id="keywords-template" style="display:none;">
+    <div class="wrapper2">
+        <div class="wrapper3">
+            <div id="fallbackTerms" class="fallback-term-holder"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
