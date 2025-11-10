@@ -21,7 +21,7 @@ DongshanPI-PicoW es una placa de desarrollo extremadamente pequeña que puede fu
 
 
 
-![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-TOPUSBLine.png)
+![](images/DongshanPI-PicoW-TOPUSBLine.png)
 
 
 
@@ -29,7 +29,7 @@ DongshanPI-PicoW es una placa de desarrollo extremadamente pequeña que puede fu
 
 La siguiente imagen muestra cómo se conectan en la realidad las cuatro líneas Dupont en la esquina inferior izquierda con el módulo MicroUSB verde. Asegúrese de conectar correctamente la placa de desarrollo con los pines VBUS y GND del módulo MicroUSB en los pines P31 y P34 de la placa de desarrollo respectivamente antes de encenderla, de lo contrario, se puede dañar el hardware, lo cual no es responsabilidad nuestra.
 
-![](https://photos.100ask.net/dongshanpi-docs/DongshanPI-PicoW/DongshanPI-PicoW-FlashUsb.png)
+![](images/DongshanPI-PicoW-FlashUsb.png)
 
 
 

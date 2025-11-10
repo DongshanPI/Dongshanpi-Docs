@@ -15,7 +15,7 @@
 * AXP313A Power Solution
 * Raspberry Pi A Size
 
-![YuzukiChameleon](https://github.com/YuzukiHD/YuzukiChameleon/raw/master/Bitmap/main.jpeg)
+![YuzukiChameleon](images/main.jpeg)
 
 
 ![h616brief](https://github.com/YuzukiHD/YuzukiChameleon/raw/master/Bitmap/brief.png）
